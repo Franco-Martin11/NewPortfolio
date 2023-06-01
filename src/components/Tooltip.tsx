@@ -1,4 +1,4 @@
-import { Stack, Text, chakra, keyframes } from "@chakra-ui/react";
+import { Stack, Text, chakra } from "@chakra-ui/react";
 
 type Props = { textDescription: string; bgTooltip: string };
 
