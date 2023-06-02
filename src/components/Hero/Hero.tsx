@@ -3,40 +3,12 @@ import {
   Button,
   ButtonGroup,
   Heading,
-  SimpleGrid,
   Stack,
   Text,
 } from "@chakra-ui/react";
-import Cta from "../Cta";
-import ProjectCard from "../Project/Project";
-import { Project } from "../../types/types";
+import Projects from "../Project/Projects";
 
-const projectData: Project[] = [
-  {
-    title: "prueba",
-    imageSource: "./image5.jpg",
-    imageAlternate: "string",
-    routes: [{ url: "string", title: "string", id: 22 }],
-  },
-  {
-    title: "prueba2",
-    imageSource: "./image6.jpg",
-    imageAlternate: "string2",
-    routes: [{ url: "string", title: "string", id: 22 }],
-  },
-  {
-    title: "prueba",
-    imageSource: "./image5.jpg",
-    imageAlternate: "string",
-    routes: [{ url: "string", title: "string", id: 22 }],
-  },
-  {
-    title: "prueba2",
-    imageSource: "./image6.jpg",
-    imageAlternate: "string2",
-    routes: [{ url: "string", title: "string", id: 22 }],
-  },
-];
+
 
 const Hero = () => {
   return (
@@ -64,26 +36,12 @@ const Hero = () => {
       <Text fontSize="20px">
         Passionate to craft usable &amp; amazing digital product.
       </Text>
-      <ButtonGroup gap={4} colorScheme="orange" size="lg" spacing={0}>
-        <Button borderTopWidth={2} borderColor="white">
-          Contact me
-        </Button>
-        <Button _hover={{ backgroundColor: "orange.100" }} variant="outline">
-          Github
-        </Button>
-        <Cta title="Repository" url="/project" />
+      <ButtonGroup gap={4} spacing={0}>
+        <Button>Contact me</Button>
+        <Button variant={"outlineLink"}>Github</Button>
       </ButtonGroup>
-      <SimpleGrid minChildWidth="250px" spacing="10" justifyItems="center">
-        {projectData.map((projectData, index) => (
-          <ProjectCard
-            key={index}
-            imageAlternate={projectData.imageAlternate}
-            imageSource={projectData.imageSource}
-            title={projectData.title}
-            routes={projectData.routes}
-          />
-        ))}
-      </SimpleGrid>
+      <Button variant={"secondary"}>Repository</Button>
+      <Projects/>
     </Stack>
   );
 };

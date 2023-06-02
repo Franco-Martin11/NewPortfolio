@@ -1,8 +1,13 @@
 import { HStack, Heading, Image, Stack } from "@chakra-ui/react";
-import Cta from "../Cta";
-import { Project } from "../../types/types";
+import { Project as ProjectType } from "../../../types/types";
+import Cta from "../../Cta";
 
-const ProjectCard = ({ title, imageAlternate, imageSource, routes }: Project) => {
+const Project = ({
+  title,
+  imageAlternate,
+  imageSource,
+  routes,
+}: ProjectType) => {
   return (
     <Stack gap={4} spacing={0} w="full" maxW="350px">
       <Image
@@ -16,12 +21,17 @@ const ProjectCard = ({ title, imageAlternate, imageSource, routes }: Project) =>
         {title}
       </Heading>
       <HStack gap={2} spacing={0}>
-        {routes.map((route) => (
-          <Cta title={route.title} url={route.url} key={route.id} />
+        {routes.map((route, index) => (
+          <Cta
+            title={route.title}
+            url={route.url}
+            key={route.id}
+            variant={index % 2 === 0 ? "main" : "secondary"}
+          />
         ))}
       </HStack>
     </Stack>
   );
 };
 
-export default ProjectCard;
+export default Project;

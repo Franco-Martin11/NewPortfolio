@@ -16,7 +16,7 @@ const Routes = () => {
         <Route path="/project/:id">
           {(params) => <PruebaPage params={params} />}
         </Route>
-        <Route path="/prueba" component={Prueba2} />
+        <Route path="/" component={Prueba2} />
       </Switch>
     </>
   );
