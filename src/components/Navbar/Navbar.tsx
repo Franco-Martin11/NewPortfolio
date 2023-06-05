@@ -13,7 +13,9 @@ const Navbar = () => {
       gap={4}
       w={"full"}
       zIndex={'modal'}
-      p={4}
+      px={4}
+      py={2}
+      backdropFilter={'blur(2px)'}
     >
       <Box>
         <Logo />

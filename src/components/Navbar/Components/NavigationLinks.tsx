@@ -1,10 +1,17 @@
 import { Button, Link, LinkBox } from "@chakra-ui/react";
 import { useState } from "react";
 import { Link as WouterLink } from "wouter";
+import { handleDisableScroll, handleEnableScroll } from "../../../utils";
+import { AiOutlineClose } from "react-icons/ai";
+import { RxHamburgerMenu } from "react-icons/rx";
 const NavigationLinks = () => {
   const [pulse, setPulse] = useState(false);
 
-  const handleClick = () => setPulse(!pulse);
+  const handleClick = async () => {
+    setPulse(!pulse);
+    !pulse ? handleDisableScroll() : handleEnableScroll();
+  };
+
   return (
     <>
       <LinkBox
@@ -36,13 +43,17 @@ const NavigationLinks = () => {
         </Link>{" "}
       </LinkBox>
       <Button
-        w="52px"
+        margin={"0 !important"}
         p={2}
         onClick={handleClick}
         zIndex={"modal"}
         display={{ md: "none" }}
       >
-        {!pulse ? "🍔" : "X"}
+        {!pulse ? (
+          <RxHamburgerMenu size={"1.5em"} />
+        ) : (
+          <AiOutlineClose size={"1.5em"} />
+        )}
       </Button>
     </>
   );

@@ -1,4 +1,3 @@
-import { Button } from "@chakra-ui/react";
 import Hero from "./Hero/Hero";
 import Navbar from "./Navbar/Navbar";
 

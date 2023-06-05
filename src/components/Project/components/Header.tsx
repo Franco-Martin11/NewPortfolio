@@ -1,12 +1,17 @@
-import { Box } from '@chakra-ui/react'
-import React from 'react'
+import { HStack, Heading, Text, chakra } from "@chakra-ui/react";
 
-type Props = {}
-
-const Header = (props: Props) => {
+const Header = () => {
   return (
-    <Box as={'header'}>Header</Box>
-  )
-}
+    <HStack spacing={0} gap={4} as={"header"} alignItems={"flex-start"}>
+      <Heading>
+        {" "}
+        EXPLORE MY RECENT <chakra.span color={"palette.main"}>WORK</chakra.span>
+      </Heading>
+      <Text>
+Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod, nam inventore? Totam consectetur commodi.
+      </Text>
+    </HStack>
+  );
+};
 
-export default Header
+export default Header;
