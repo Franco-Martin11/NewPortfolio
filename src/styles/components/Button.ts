@@ -5,7 +5,7 @@ const Button = {
     h: "fit-content",
     px: "var(--chakra-space-4)",
     py: "var(--chakra-space-2)",
-    bgColor: "palette.main",
+    bgColor: "whiteAlpha.600",
     borderRadius: "md",
     borderBottomWidth: "4px",
     borderRightWidth: "4px",
@@ -16,7 +16,7 @@ const Button = {
     fontWeight: "bold",
     textTransform: "uppercase",
     _hover: {
-      borderColor: "whiteAlpha.800",
+      borderColor: "whiteAlpha.900",
     },
   },
   variants: {
@@ -56,10 +56,10 @@ const Button = {
       },
     },
   },
-  defaultProps: {
-    variant: "primary",
-    size: "regular",
-  },
+  // defaultProps: {
+  //   variant: "primary",
+  //   size: "regular",
+  // },
 };
 
 export default Button;

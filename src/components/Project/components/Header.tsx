@@ -7,8 +7,9 @@ const Header = () => {
         {" "}
         EXPLORE MY RECENT <chakra.span color={"palette.main"}>WORK</chakra.span>
       </Heading>
-      <Text>
-Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod, nam inventore? Totam consectetur commodi.
+      <Text maxW={"md"}>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod, nam
+        inventore? Totam consectetur commodi.
       </Text>
     </HStack>
   );

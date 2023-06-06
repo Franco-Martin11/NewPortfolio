@@ -11,8 +11,13 @@ const colors = {
     "orangeAlpha.100": "rgb(245 112 31 / 35%)",
   },
 };
+
 const theme = extendTheme({
   colors,
+  fonts: {
+    heading: `'CabinetGrotesk-Extrabold', sans-serif`,
+    body: `'Satoshi-Medium', sans-serif`,
+  },
   components: {
     Button,
   },

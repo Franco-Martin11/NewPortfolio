@@ -25,7 +25,7 @@ const NavigationLinks = () => {
         justifyContent={"center"}
         alignItems={"center"}
         margin={"0 auto"}
-        backdropFilter="blur(10px) hue-rotate(90deg)"
+        backgroundColor={{ base: "rgb(0 0 0 / 95%)", md: "transparent" }}
         zIndex={"overlay"}
         color={"white"}
       >
@@ -48,6 +48,8 @@ const NavigationLinks = () => {
         onClick={handleClick}
         zIndex={"modal"}
         display={{ md: "none" }}
+        borderRadius={'full'}
+        border={"none"}
       >
         {!pulse ? (
           <RxHamburgerMenu size={"1.5em"} />
