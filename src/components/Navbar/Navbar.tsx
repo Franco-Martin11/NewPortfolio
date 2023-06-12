@@ -2,7 +2,6 @@ import { Box, HStack } from "@chakra-ui/react";
 import { Logo } from "../Icons";
 import NavigationLinks from "./Components/NavigationLinks";
 
-
 const Navbar = () => {
   return (
     <HStack
@@ -12,10 +11,9 @@ const Navbar = () => {
       justify={"space-between"}
       gap={4}
       w={"full"}
-      zIndex={'modal'}
-      px={4}
+      zIndex={"modal"}
       py={2}
-      backdropFilter={'blur(2px)'}
+      px={4}
     >
       <Box>
         <Logo />

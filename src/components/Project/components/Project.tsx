@@ -1,12 +1,6 @@
 import { HStack, Heading, Image, Stack } from "@chakra-ui/react";
 import { Project as ProjectType } from "../../../types/types";
 import Cta from "../../Cta";
-import { AiOutlineGithub, AiOutlineLink } from "react-icons/ai";
-import { Link as WouterLink } from "wouter";
-
-interface ComponentMap {
-  [key: string]: React.ReactNode;
-}
 
 const Project = ({
   title,
@@ -14,39 +8,25 @@ const Project = ({
   imageSource,
   routes,
 }: ProjectType) => {
-  const componentMap: ComponentMap = {
-    deploy: <AiOutlineLink />,
-    repository: <AiOutlineGithub />,
-  };
-
   return (
-    <Stack
-      gap={8}
-      spacing={0}
-      w="full"
-      maxW={"350px"}
-      _hover={{ cursor: "pointer" }}
-      as={WouterLink}
-      href={`/project/${imageAlternate}`}
-    >
+    <Stack gap={4} spacing={0} w="full" maxW="350px">
       <Image
         w="full"
         src={imageSource}
         alt={imageAlternate}
         aspectRatio="1/1"
-        borderRadius="md"
+        borderRadius="lg"
       />
-      <Heading fontSize="38px" fontWeight="semibold" textTransform="uppercase">
+      <Heading fontSize="28px" fontWeight="semibold" textTransform="uppercase">
         {title}
       </Heading>
       <HStack gap={2} spacing={0}>
-        {routes.map((route) => (
+        {routes.map((route, index) => (
           <Cta
             title={route.title}
             url={route.url}
             key={route.id}
-            variant={"secondary"}
-            icon={componentMap[route.title]}
+            variant={index % 2 === 0 ? "main" : "secondary"}
           />
         ))}
       </HStack>

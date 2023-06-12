@@ -5,18 +5,18 @@ const Button = {
     h: "fit-content",
     px: "var(--chakra-space-4)",
     py: "var(--chakra-space-2)",
-    bgColor: "whiteAlpha.600",
+    bgColor: "palette.main",
     borderRadius: "md",
-    borderBottomWidth: "4px",
-    borderRightWidth: "4px",
+    borderBottomWidth: "2px",
+    borderRightWidth: "2px",
     borderTopWidth: "1px",
     borderLeftWidth: "1px",
-    borderColor: "whiteAlpha.800",
+    borderColor: "whiteAlpha.600",
     fontSize: "md",
     fontWeight: "bold",
     textTransform: "uppercase",
     _hover: {
-      borderColor: "whiteAlpha.900",
+      borderColor: "whiteAlpha.800",
     },
   },
   variants: {
@@ -37,8 +37,8 @@ const Button = {
     },
     secondary: {
       bg: "palette.secondary",
-      px: "var(--chakra-space-4)",
-      py: "var(--chakra-space-2)",
+      px: "var(--chakra-space-8)",
+      py: "var(--chakra-space-1)",
       letterSpacing: "var(--chakra-letterSpacings-widest)",
       _hover: {
         bg: "blackAlpha.600",
@@ -56,10 +56,10 @@ const Button = {
       },
     },
   },
-  // defaultProps: {
-  //   variant: "primary",
-  //   size: "regular",
-  // },
+  defaultProps: {
+    variant: "primary",
+    size: "regular",
+  },
 };
 
 export default Button;

@@ -1,25 +1,20 @@
 // 1. Import the extendTheme function
 import { extendTheme } from "@chakra-ui/react";
-import Button from "./components/Button";
 const colors = {
   palette: {
-    main: "#f5701f",
-    secondary: "#1f1f1f",
-    heading: "#e9e5de",
-    body: "#716e6e",
-    accent: "#5c63c0",
-    "orangeAlpha.100": "rgb(245 112 31 / 35%)",
+    mainDarkBlue: "#121220",
+    mainCyan: "#94E4E2",
+    primaryViolet: "#26263D",
+    secondaryPurple: "#6F5BC6",
+    grayText: "#D0D0D0",
+    whiteText: "#FFFFFF",
   },
 };
-
 const theme = extendTheme({
   colors,
   fonts: {
     heading: `'CabinetGrotesk-Extrabold', sans-serif`,
     body: `'Satoshi-Medium', sans-serif`,
-  },
-  components: {
-    Button,
   },
 });
 

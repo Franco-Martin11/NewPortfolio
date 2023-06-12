@@ -1,43 +1,27 @@
-import {
-  Box,
-  Button,
-  ButtonGroup,
-  Heading,
-  SimpleGrid,
-  Text,
-} from "@chakra-ui/react";
+import { Stack } from "@chakra-ui/react";
+import CardHeading from "./components/CardHeading";
+import AnchoreBox from "./components/AnchoreBox";
 
 const Hero = () => {
   return (
-    <SimpleGrid
-      minChildWidth="350px"
-      placeItems="center"
-      p={4}
-      pt={"20"}
+    <Stack
+      py={8}
+      px={4}
+      pt={"40"}
       m={"0 !important"}
+      position={'relative'}
       as="section"
-      color="white"
       spacing={"none"}
-      minH="100vh"
       className="bgSvg"
-      gap={4}
+      color="white"
+      justifyContent="center"
+      minH="100vh"
+      gap={8}
+      alignItems={"center"}
     >
-      <Box h={"fit-content"}>
-        <Heading fontSize="48px" fontWeight="extrabold" as="h1">
-          Hi, I’m Franco Martin
-        </Heading>
-        <Heading fontWeight="bold" color="orange.500" fontSize="32px" as="h3">
-          Frontend Developer
-        </Heading>
-        <Text mt={4} fontSize="20px">
-          Passionate to craft usable &amp; amazing digital product.
-        </Text>
-      </Box>
-      <ButtonGroup h={"fit-content"} gap={4} spacing={0}>
-        <Button variant={"primary"}>Contact me</Button>
-        <Button variant={"outlineLink"}>Github</Button>
-      </ButtonGroup>
-    </SimpleGrid>
+      <CardHeading />
+      <AnchoreBox />
+    </Stack>
   );
 };
 

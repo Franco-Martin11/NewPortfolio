@@ -1,20 +1,30 @@
-import { SVGProps } from "react";
-const SvgComponent = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={30}
-    height={30}
-    fill="none"
-    {...props}
+import { Box, Heading, LinkBox, LinkOverlay } from "@chakra-ui/react";
+import { Link as WouterLink } from "wouter";
+const SvgComponent = () => (
+  <LinkBox
+    p={"0.5"}
+    borderRadius={"full"}
+    bgGradient="linear-gradient(90deg, #593FC9 2.08%, #6F5BC6 48.44%, #917EDB 72.4%, #B6A4F3 100%)"
+    cursor={"pointer"}
   >
-    <path
-      fill="#8D8D8D"
-      d="M30 15c0 8.284-6.716 15-15 15-8.284 0-15-6.716-15-15C0 6.716 6.716 0 15 0c8.284 0 15 6.716 15 15Z"
-    />
-    <path
-      fill="#fff"
-      d="M13.933 10.758V20h-2.228v-9.242h2.228Zm3.592 3.847v1.713h-4.227v-1.714h4.227Zm.362-3.847v1.72h-4.59v-1.72h4.59Z"
-    />
-  </svg>
+    <Box borderRadius={"inherit"} px={2} py={1} bg={"palette.mainDarkBlue"}>
+      <LinkOverlay as={WouterLink} href="/">
+        <Box
+          as={Heading}
+          pointerEvents="none"
+          sx={{
+            background:
+              "linear-gradient(94.75deg, #94E4E2 3.81%, #BCEEED 82.98%, #FFFFFF 116.45%)",
+            WebkitBackgroundClip: "text",
+            WebkitTextFillColor: "transparent",
+            backgroundClip: "text",
+            textFillColor: "transparent",
+          }}
+        >
+          FMARTIN
+        </Box>
+      </LinkOverlay>
+    </Box>
+  </LinkBox>
 );
 export default SvgComponent;

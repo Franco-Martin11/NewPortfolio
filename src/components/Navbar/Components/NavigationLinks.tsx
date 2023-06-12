@@ -1,20 +1,14 @@
-import { Button, Link, LinkBox } from "@chakra-ui/react";
+import { Button, HStack, Link } from "@chakra-ui/react";
 import { useState } from "react";
 import { Link as WouterLink } from "wouter";
-import { handleDisableScroll, handleEnableScroll } from "../../../utils";
-import { AiOutlineClose } from "react-icons/ai";
-import { RxHamburgerMenu } from "react-icons/rx";
+import { LinkRuoteArray } from "../../../constant/data";
 const NavigationLinks = () => {
   const [pulse, setPulse] = useState(false);
 
-  const handleClick = async () => {
-    setPulse(!pulse);
-    !pulse ? handleDisableScroll() : handleEnableScroll();
-  };
-
+  const handleClick = () => setPulse(!pulse);
   return (
     <>
-      <LinkBox
+      <HStack
         display={{ base: `${!pulse ? "none" : "flex"}`, md: "flex" }}
         position={{ base: "absolute", md: "initial" }}
         flexDirection={{ base: "column", md: "row" }}
@@ -25,37 +19,32 @@ const NavigationLinks = () => {
         justifyContent={"center"}
         alignItems={"center"}
         margin={"0 auto"}
-        backgroundColor={{ base: "rgb(0 0 0 / 95%)", md: "transparent" }}
+        backdropFilter={{
+          base: "blur(10px) hue-rotate(90deg)",
+          md: "none",
+        }}
         zIndex={"overlay"}
         color={"white"}
       >
-        <Link as={WouterLink} href="/project">
-          Chakra project
-        </Link>
-        <Link as={WouterLink} href="/project/22">
-          Chakra project 22
-        </Link>
-        <Link as={WouterLink} href="/prueba">
-          Chakra prueba
-        </Link>
-        <Link as={WouterLink} href="/">
-          Chakra HOME
-        </Link>{" "}
-      </LinkBox>
+        {LinkRuoteArray.map((link) => (
+          <Link
+            as={WouterLink}
+            key={link.id}
+            aria-label={link.ariaLabel}
+            href={link.route}
+          >
+            {link.title}
+          </Link>
+        ))}
+      </HStack>
       <Button
-        margin={"0 !important"}
+        w="52px"
         p={2}
         onClick={handleClick}
         zIndex={"modal"}
         display={{ md: "none" }}
-        borderRadius={'full'}
-        border={"none"}
       >
-        {!pulse ? (
-          <RxHamburgerMenu size={"1.5em"} />
-        ) : (
-          <AiOutlineClose size={"1.5em"} />
-        )}
+        {!pulse ? "🍔" : "X"}
       </Button>
     </>
   );

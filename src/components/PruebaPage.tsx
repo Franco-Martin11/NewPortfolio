@@ -1,14 +1,11 @@
-import { Heading, Stack, Text } from "@chakra-ui/react";
+import React from 'react'
 
-type Props = { params: { id: string } };
+type Props = {}
 
-const PruebaPage = ({ params }: Props) => {
+const PruebaPage = (props: Props) => {
   return (
-    <Stack bg={"palette.secondary"} color={"palette.heading"}>
-      <Text>PruebaPage:{params.id}</Text>
-      <Heading>Holis</Heading>
-    </Stack>
-  );
-};
+    <div>PruebaPage</div>
+  )
+}
 
-export default PruebaPage;
+export default PruebaPage

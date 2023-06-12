@@ -1,4 +1,7 @@
-import { Project } from "../types/types";
+import { LinkRoute, MediaLink, Project } from "../types/types";
+import { FaLinkedin, FaGithubSquare } from "react-icons/fa";
+import { SiGmail } from "react-icons/si";
+
 export const projectData: Project[] = [
   {
     title: "prueba",
@@ -35,5 +38,62 @@ export const projectData: Project[] = [
       { url: "string", title: "repository", id: 22 },
       { url: "/", title: "deploy", id: 4 },
     ],
+  },
+];
+
+export const LinkRuoteArray: LinkRoute[] = [
+  {
+    route: "/home",
+    id: 1,
+    title: "Home",
+    ariaLabel: "Link to home page",
+  },
+  {
+    route: "/about",
+    id: 2,
+    title: "About",
+    ariaLabel: "Link to about page",
+  },
+  {
+    route: "/products",
+    id: 3,
+    title: "Products",
+    ariaLabel: "Link to products page",
+  },
+  {
+    route: "/services",
+    id: 4,
+    title: "Services",
+    ariaLabel: "Link to services page",
+  },
+  {
+    route: "/contact",
+    id: 5,
+    title: "Contact",
+    ariaLabel: "Link to contact page",
+  },
+];
+
+export const MediaLinkArray: MediaLink[] = [
+  {
+    route: "https://www.linkedin.com/in/franc-martin/",
+    ariaLabel: "Link to facebook page",
+    label:"Gmail",
+    id: 1,
+    icon: SiGmail,
+  },
+  {
+    route: "https://github.com/Franco-Martin11",
+    ariaLabel: "Link to Github page",
+    id: 2,
+    label:"Github",
+    icon: FaGithubSquare,
+  },
+  {
+    route: "https://www.linkedin.com/in/franc-martin/",
+    ariaLabel: "Link to Linkedin page",
+    id: 3,
+    label:"Linkedin",
+    icon: FaLinkedin,
   },
 ];
