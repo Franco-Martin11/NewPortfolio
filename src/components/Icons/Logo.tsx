@@ -21,7 +21,7 @@ const SvgComponent = () => (
             textFillColor: "transparent",
           }}
         >
-          FMARTIN
+          FM
         </Box>
       </LinkOverlay>
     </Box>

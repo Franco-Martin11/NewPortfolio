@@ -1,9 +1,11 @@
 import { Heading } from "@chakra-ui/react";
-import React from "react";
 
-type Props = { text: string };
+interface GradientText {
+  [key: string]: string | object;
+  text: string;
+}
 
-const GradientText = ({ text }: Props) => {
+const GradientText = ({ text, ...props }: GradientText) => {
   return (
     <Heading
       sx={{
@@ -14,8 +16,10 @@ const GradientText = ({ text }: Props) => {
         backgroundClip: "text",
         textFillColor: "transparent",
       }}
+      {...props}
     >
       {text}
+      <>{props.children}</>
     </Heading>
   );
 };

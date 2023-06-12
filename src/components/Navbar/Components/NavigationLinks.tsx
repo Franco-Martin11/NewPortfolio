@@ -2,10 +2,15 @@ import { Button, HStack, Link } from "@chakra-ui/react";
 import { useState } from "react";
 import { Link as WouterLink } from "wouter";
 import { LinkRuoteArray } from "../../../constant/data";
+import { handleDisableScroll, handleEnableScroll } from "../../../utils";
+
 const NavigationLinks = () => {
   const [pulse, setPulse] = useState(false);
 
-  const handleClick = () => setPulse(!pulse);
+  const handleClick = async () => {
+    setPulse(!pulse);
+    !pulse ? handleDisableScroll() : handleEnableScroll();
+  };
   return (
     <>
       <HStack
