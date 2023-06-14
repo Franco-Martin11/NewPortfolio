@@ -5,15 +5,11 @@ import Navbar from "./components/Navbar/Navbar";
 
 function App() {
   return (
-    <Stack
-      as="main"
-      minH={"100vh"}
-      backgroundColor={"palette.mainDarkBlue"}
-    >
-      <Container maxW={"1250px"} px={4} position={'relative'}>
+    <Stack as="main" minH={"100vh"} backgroundColor={"palette.mainDarkBlue"}>
+      <Container maxW={"1250px"} px={0} position={"relative"}>
         <Navbar />
-        <Routes />
       </Container>
+      <Routes />
     </Stack>
   );
 }
