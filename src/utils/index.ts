@@ -5,13 +5,13 @@ export const handleScrollTop = (): void => {
   });
 };
 
-export const handleDisableScroll = (): void => {
-  const scrollPosition =
-    window.pageYOffset ||
-    document.documentElement.scrollTop ||
-    document.body.scrollTop ||
-    0;
+const scrollPosition =
+  window.scrollY ||
+  document.documentElement.scrollTop ||
+  document.body.scrollTop ||
+  0;
 
+export const handleDisableScroll = (): void => {
   // Añadir estilos para desactivar el scroll
   document.body.style.overflow = "hidden";
   document.documentElement.style.overflow = "hidden";
@@ -19,7 +19,7 @@ export const handleDisableScroll = (): void => {
   document.body.style.top = `-${scrollPosition}px`;
 };
 
-export const handleEnableScroll = () => {
+export const handleEnableScroll = (): void => {
   // Restaurar los estilos para habilitar el scroll
   document.body.style.overflow = "";
   document.documentElement.style.overflow = "";

@@ -19,6 +19,7 @@ const AnchoreBox = () => {
           <Box
             as="a"
             rel="noopener"
+            target="_blank"
             href={media.route}
             aria-label={media.ariaLabel}
           >
