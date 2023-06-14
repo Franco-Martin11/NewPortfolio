@@ -44,7 +44,7 @@ const NavigationLinks = () => {
         {linkItems}
       </HStack>
       <Box
-        boxSize={["48px", "68px"]}
+        boxSize={"48px"}
         p={2}
         backgroundImage={'url("/CircleCTA.svg")'}
         title="HamburgerMenuButton"
