@@ -6,22 +6,20 @@ import HeadingHero from "./components/HeadingHero";
 const Hero = () => {
   return (
     <Stack
-      position={"relative"}
-      px={{ base: 4, sm: 6, md: "12", lg: 10 }}
-      pt={{ base: "20",md:"24" }}
+      position="relative"
+      px={[4, 6, "12", 10]}
+      pt={["20", "24"]}
       pb={4}
       as="section"
-      spacing={"none"}
-      className="bgSvg"
+      spacing="none"
       color="white"
-      flexDir={{ base: "column-reverse", md: "column" }}
-      justifyContent={{base:"center",md: "flex-start"}}
-      alignItems={"center"}
-      gap={{ base: 10, md: 8 }}
+      flexDir={["column-reverse", "column"]}
+      justifyContent={["center", "flex-start"]}
+      alignItems="center"
+      gap={[10, 8]}
       minH="100vh"
-      m={"0 auto !important"}
-      maxW={"1200px"}
-      w={"full"}
+      m="0 auto !important"
+      w="full"
     >
       <CardHeading />
       <AnchoreBox />

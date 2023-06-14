@@ -7,6 +7,7 @@ const Navbar = () => {
     <HStack
       position={"fixed"}
       top={"0"}
+      left={"0"}
       spacing={0}
       justify={"space-between"}
       gap={4}

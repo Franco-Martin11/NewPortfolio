@@ -1,6 +1,5 @@
 import { HStack, Heading, Image, Stack } from "@chakra-ui/react";
 import { Project as ProjectType } from "../../../types/types";
-import Cta from "../../Cta";
 
 const Project = ({
   title,
@@ -21,13 +20,14 @@ const Project = ({
         {title}
       </Heading>
       <HStack gap={2} spacing={0}>
-        {routes.map((route, index) => (
-          <Cta
-            title={route.title}
-            url={route.url}
-            key={route.id}
-            variant={index % 2 === 0 ? "main" : "secondary"}
-          />
+        {routes.map((_route, _index) => (
+          // <Cta
+          //   title={route.title}
+          //   url={route.url}
+          //   key={route.id}
+          //   variant={index % 2 === 0 ? "main" : "secondary"}
+          // />
+          <></>
         ))}
       </HStack>
     </Stack>

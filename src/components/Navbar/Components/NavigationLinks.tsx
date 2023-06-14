@@ -1,4 +1,4 @@
-import { Button, HStack, Text } from "@chakra-ui/react";
+import { Box, HStack, Text,chakra } from "@chakra-ui/react";
 import { useState } from "react";
 import { Link as WouterLink } from "wouter";
 import { LinkRuoteArray } from "../../../constant/data";
@@ -43,15 +43,48 @@ const NavigationLinks = () => {
       >
         {linkItems}
       </HStack>
-      <Button
-        w="52px"
+      <Box
+        boxSize={["48px", "68px"]}
         p={2}
+        backgroundImage={'url("/CircleCTA.svg")'}
+        title="HamburgerMenuButton"
+        type="button"
         onClick={handleClick}
+        as="button"
         zIndex="modal"
         display={{ md: "none" }}
+        position={"relative"}
       >
-        {!pulse ? "🍔" : "X"}
-      </Button>
+        {!pulse ? (
+          "🍔"
+        ) : (
+          <chakra.svg
+            margin="auto"
+            width="18"
+            height="18"
+            viewBox="0 0 18 18"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <line
+              x1="1.98937"
+              y1="1.93934"
+              x2="16.1315"
+              y2="16.0815"
+              stroke="white"
+              strokeWidth="3"
+            />
+            <line
+              x1="1.86805"
+              y1="15.9393"
+              x2="16.0102"
+              y2="1.7972"
+              stroke="white"
+              strokeWidth="3"
+            />
+          </chakra.svg>
+        )}
+      </Box>
     </>
   );
 };
