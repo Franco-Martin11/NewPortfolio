@@ -1,6 +1,6 @@
-import { Box, HStack } from "@chakra-ui/react";
-import { Logo } from "../Icons";
+import { HStack } from "@chakra-ui/react";
 import NavigationLinks from "./Components/NavigationLinks";
+import Logo from "./Components/Logo";
 
 const Navbar = () => {
   return (
@@ -15,9 +15,7 @@ const Navbar = () => {
       py={2}
       px={4}
     >
-      <Box>
-        <Logo />
-      </Box>
+      <Logo />
       <NavigationLinks />
     </HStack>
   );
