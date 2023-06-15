@@ -1,3 +1,4 @@
+import { Dispatch, SetStateAction } from "react";
 import { IconType } from "react-icons";
 export type ProjectRoutes = { url: string; title: string; id: number };
 
@@ -21,4 +22,31 @@ export type MediaLink = {
   id: number;
   label: string;
   icon: IconType;
+};
+
+export type SetIsHovering = Dispatch<SetStateAction<boolean>>;
+
+type ImageProps = {
+  srcUrl: string;
+  alt: string;
+};
+
+type HyperLinkItem = {
+  icon: IconType;
+  route: string;
+  id: number;
+  title: string;
+};
+
+type DescriptionProps = {
+  numberProject: number;
+  title: string;
+  paragraph: string;
+};
+
+export type ProjectProps = {
+  descriptions: DescriptionProps;
+  image: ImageProps;
+  route: string;
+  hyperLink: HyperLinkItem[];
 };

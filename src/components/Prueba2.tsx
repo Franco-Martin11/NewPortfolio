@@ -1,6 +1,6 @@
 import { Box, Heading, Stack } from "@chakra-ui/react";
 import Hero from "./Hero/Hero";
-import ProjectCard from "./Project/ProjectCard";
+import { Projects } from ".";
 
 const Prueba2 = () => {
   return (
@@ -20,11 +20,7 @@ const Prueba2 = () => {
         <Heading color={"white"}>
           Sera que esto funciona de alguna manera
         </Heading>
-        <Box>
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
-        </Box>
+        <Projects />
       </Box>
     </Stack>
   );

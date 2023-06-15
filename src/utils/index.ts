@@ -1,3 +1,5 @@
+import { SetIsHovering } from "../types/types";
+
 export const handleScrollTop = (): void => {
   window.scrollTo({
     top: 0,
@@ -25,4 +27,13 @@ export const handleEnableScroll = (): void => {
   document.documentElement.style.overflow = "";
   document.body.style.position = "";
   document.body.style.top = "";
+};
+
+export const HandleMouseEvent = {
+  MouseOver: (setIsHovering: SetIsHovering) => {
+    setIsHovering(true);
+  },
+  MouseOut: (setIsHovering: SetIsHovering) => {
+    setIsHovering(false);
+  },
 };

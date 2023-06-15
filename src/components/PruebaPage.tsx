@@ -1,11 +1,5 @@
-import React from 'react'
+const PruebaPage = () => {
+  return <div>PruebaPage</div>;
+};
 
-type Props = {}
-
-const PruebaPage = (props: Props) => {
-  return (
-    <div>PruebaPage</div>
-  )
-}
-
-export default PruebaPage
+export default PruebaPage;

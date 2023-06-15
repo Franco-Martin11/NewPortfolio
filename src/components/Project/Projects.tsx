@@ -1,22 +1,25 @@
-import { SimpleGrid, Stack } from "@chakra-ui/react";
-import ProjectCard from "./components/Project";
-import { projectData } from "../../constant/data";
+import { SimpleGrid } from "@chakra-ui/react";
+import { ProjectExampleData } from "../../constant/data";
+import ProjectCard from "./components/ProjectCard";
 
 const Projects = () => {
   return (
-    <Stack spacing={0} gap={4} p={4} as={"section"}>
-      <SimpleGrid minChildWidth="250px" spacing="10" justifyItems="center">
-        {projectData.map((projectData, index) => (
-          <ProjectCard
-            key={index}
-            imageAlternate={projectData.imageAlternate}
-            imageSource={projectData.imageSource}
-            title={projectData.title}
-            routes={projectData.routes}
-          />
-        ))}
-      </SimpleGrid>
-    </Stack>
+    <SimpleGrid
+      minChildWidth="300px"
+      spacing={4}
+      maxW={{ base: "1250px", xl: "1500px" }}
+      margin={"0 auto"}
+    >
+      {ProjectExampleData.map((project) => (
+        <ProjectCard
+          key={project.descriptions.numberProject}
+          descriptions={project.descriptions}
+          image={project.image}
+          route={project.route}
+          hyperLink={project.hyperLink}
+        />
+      ))}
+    </SimpleGrid>
   );
 };
 
