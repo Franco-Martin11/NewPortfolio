@@ -24,7 +24,7 @@ const Projects = () => {
       w={"full"}
       maxW={{ base: "1250px", xl: "1500px" }}
       margin={"0 auto"}
-      p={{ base: 2, md: 4 }}
+      // p={{ base: 2, md: 4 }}
       my={8}
     >
       {ProjectExampleData.map((project: ProjectProps) => (

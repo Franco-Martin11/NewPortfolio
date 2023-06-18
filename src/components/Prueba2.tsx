@@ -1,13 +1,15 @@
 import { Button, Container, HStack, Stack, Text } from "@chakra-ui/react";
 import Hero from "./Hero/Hero";
 import { GradientText, Projects } from ".";
+import AboutMe from "./AboutMe/AboutMe";
 
 const Prueba2 = () => {
   return (
     <Stack gap={12}>
       <Hero />
       <Container
-      variant={'section'}
+        variant={"section"}
+        as={'section'}
         // backgroundSize={"cover"}
         // backgroundImage={'url("/FrameHome.svg")'}
         // backgroundPosition={"left"}
@@ -46,6 +48,9 @@ const Prueba2 = () => {
           </HStack>
         </HStack>
         <Projects />
+      </Container>
+      <Container variant={"overlay"}>
+        <AboutMe />
       </Container>
     </Stack>
   );
