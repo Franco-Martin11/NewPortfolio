@@ -14,7 +14,7 @@ const SpinBox = ({ ...props }: SpinBox) => {
 
   const animation = prefersReducedMotion
     ? undefined
-    : `${spin} infinite 600s linear`;
+    : `${spin} infinite 300s linear`;
   return (
     <Box animation={animation} borderRadius={"xl"} {...props}>
       <>{props.children}</>

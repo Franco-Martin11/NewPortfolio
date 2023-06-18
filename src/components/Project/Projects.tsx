@@ -20,9 +20,12 @@ const Projects = () => {
   return (
     <SimpleGrid
       minChildWidth="300px"
-      spacing={4}
+      gap={{ base: 14, md: 8 }}
+      w={"full"}
       maxW={{ base: "1250px", xl: "1500px" }}
       margin={"0 auto"}
+      p={{ base: 2, md: 4 }}
+      my={8}
     >
       {ProjectExampleData.map((project: ProjectProps) => (
         <ProjectCard

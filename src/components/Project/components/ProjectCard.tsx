@@ -26,7 +26,6 @@ const ProjectCard = ({ descriptions, image, hyperLink }: ProjectProps) => {
       gap={6}
       onMouseOver={() => HandleMouseEvent.MouseOver(setIsHovering)}
       onMouseOut={() => HandleMouseEvent.MouseOut(setIsHovering)}
-      p={8}
       _after={{
         content: `'0${descriptions.numberProject}'`,
         display: "inline-block",
@@ -34,12 +33,12 @@ const ProjectCard = ({ descriptions, image, hyperLink }: ProjectProps) => {
         color: "#c7baff",
         fontWeight: "bold",
         position: "absolute",
-        left: "5px",
-        top: "0",
+        left: "0",
+        top: "-40px",
         borderRadius: "full",
-        padding: 2,
-        borderColor: "white",
-        borderWidth: "1px",
+        paddingY: 1,
+        paddingX: 2,
+        border: "1px solid white",
       }}
     >
       <HStack
