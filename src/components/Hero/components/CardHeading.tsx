@@ -24,6 +24,10 @@ const CardHeading = () => {
           p={"0.5"}
           borderRadius={"full"}
           bgGradient="linear-gradient(90deg, #593FC9 2.08%, #6F5BC6 48.44%, #917EDB 72.4%, #B6A4F3 100%)"
+          as="button"
+          type="button"
+          cursor={'pointer'}
+          onClick={()=>alert('esto es una prueba')}
         >
           <Box borderRadius={"inherit"} p={"3"} bg={"palette.mainDarkBlue"}>
             <FiPower color={"white"} size="22px" />

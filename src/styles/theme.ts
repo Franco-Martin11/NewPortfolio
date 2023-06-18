@@ -9,6 +9,7 @@ const colors = {
     secondaryPurple: "#6F5BC6",
     grayText: "#D0D0D0",
     whiteText: "#FFFFFF",
+    sectionAbout: "#1A1A2A",
   },
 };
 const theme = extendTheme({

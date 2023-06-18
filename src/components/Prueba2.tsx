@@ -9,7 +9,8 @@ const Prueba2 = () => {
       <Hero />
       <Container
         variant={"section"}
-        as={'section'}
+        as={"section"}
+        pr={{ md: 8 }}
         // backgroundSize={"cover"}
         // backgroundImage={'url("/FrameHome.svg")'}
         // backgroundPosition={"left"}
@@ -28,8 +29,9 @@ const Prueba2 = () => {
             gap={4}
             flexWrap={"wrap"}
             spacing={0}
+            justifyContent={'space-between'}
           >
-            <Text flex={"0 0 350px"}>
+            <Text flex={"0 0 350px"} fontSize={'lg'} color={"palette.grayText"}>
               {" "}
               Explorá mis Proyectos Frontend con Interfases Intuitivas y
               Atractivas hechas en React y Vue
@@ -49,9 +51,7 @@ const Prueba2 = () => {
         </HStack>
         <Projects />
       </Container>
-      <Container variant={"overlay"}>
-        <AboutMe />
-      </Container>
+      <AboutMe />
     </Stack>
   );
 };
