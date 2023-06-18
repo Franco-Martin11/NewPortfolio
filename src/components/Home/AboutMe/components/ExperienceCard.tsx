@@ -5,11 +5,14 @@ import {
   ListItem,
   Text,
 } from "@chakra-ui/react";
-import { ExperienceCard as ExperienceType } from "../../../types/types";
-
-const ExperienceCard = ({ companies, date, listResponsibilities }: ExperienceType) => {
+import { ExperienceCard as ExperienceType } from "../../../../types/types";
+const ExperienceCard = ({
+  companies,
+  date,
+  listResponsibilities,
+}: ExperienceType) => {
   return (
-    <Stack backdropBlur={"lg"} gap={4} spacing={0}>
+    <Stack backdropBlur={"lg"} gap={4} spacing={0} color={"white"}>
       <Heading>{companies}</Heading>
       <Text>{date}</Text>
       {listResponsibilities && (

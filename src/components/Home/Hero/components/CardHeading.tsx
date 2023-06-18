@@ -1,6 +1,6 @@
 import { Box, HStack, Image, Stack } from "@chakra-ui/react";
 import { FiPower } from "react-icons/fi";
-import GradientText from "../../GradientText";
+import { GradientText } from "../../..";
 
 const CardHeading = () => {
   return (

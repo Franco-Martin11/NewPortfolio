@@ -1,7 +1,6 @@
 import { Stack } from "@chakra-ui/react";
-import CardHeading from "./components/CardHeading";
-import AnchoreBox from "./components/AnchoreBox";
-import HeadingHero from "./components/HeadingHero";
+import { CardHeading, AnchoreBox, HeadingHero } from "..";
+
 
 const Hero = () => {
   return (
@@ -17,7 +16,7 @@ const Hero = () => {
       justifyContent={["center", "flex-start"]}
       alignItems="center"
       gap={[10, 8]}
-      minH="100vh"
+      minH={["100vh", "100vh", "50vh"]}
       m="0 auto !important"
       w="full"
     >

@@ -1,5 +1,5 @@
 import { Box, Stack, Tooltip } from "@chakra-ui/react";
-import { MediaLinkArray } from "../../../constant/data";
+import { MediaLinkArray } from "../../../../constant/data";
 
 const AnchoreBox = () => {
   return (

@@ -1,17 +1,18 @@
 import {
-  Box,
   HStack,
+  Box,
+  Stack,
+  Tooltip,
   Heading,
   Image,
-  Link,
-  Stack,
   Text,
-  Tooltip,
+  Link,
 } from "@chakra-ui/react";
 import { useState } from "react";
-import SpinBox from "./SpinBox";
-import { HandleMouseEvent } from "../../../utils";
-import { ProjectProps } from "../../../types/types";
+import { SpinBox } from "../../..";
+import { ProjectProps } from "../../../../types/types";
+import { HandleMouseEvent } from "../../../../utils";
+
 
 const ProjectCard = ({ descriptions, image, hyperLink }: ProjectProps) => {
   const [isHovering, setIsHovering] = useState(false);

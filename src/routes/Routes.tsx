@@ -1,5 +1,5 @@
 import { Route, Switch } from "wouter";
-import { Prueba2 } from "../components";
+import { Prueba2 } from "../components/Home";
 
 const Routes = () => {
   //   const [location, navigate] = useLocation();

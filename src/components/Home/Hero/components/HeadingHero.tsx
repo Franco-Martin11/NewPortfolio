@@ -1,12 +1,12 @@
 import { Box, Stack } from "@chakra-ui/react";
-import GradientText from "../../GradientText";
+import { GradientText } from "../../..";
 
 const HeadingHero = () => {
   return (
     <Stack
       position={{ base: "inherit", md: "absolute" }}
       maxW={"1200px"}
-      bottom={{ base: 0, md: "50px",lg: 8 }}
+      bottom={{ base: 0, md: "50px", lg: 8 }}
       px={{ md: 8 }}
       alignItems={"center"}
     >
