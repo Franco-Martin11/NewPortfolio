@@ -1,8 +1,22 @@
 import { SimpleGrid } from "@chakra-ui/react";
-import { ProjectExampleData } from "../../constant/data";
 import ProjectCard from "./components/ProjectCard";
+import { ProjectProps } from "../../types/types";
+import { ProjectExampleData } from "../../constant/data";
 
 const Projects = () => {
+  // const { data, loading, error } = useFetch("http://localhost:3000/project");
+  // if (loading)
+  //   return (
+  //     <Center bg="transparent" h="150px" color="white">
+  //       <Spinner colorScheme="purple" size={"xl"} />
+  //     </Center>
+  //   );
+
+  // if (error)
+  //   <Center bg="transparent" h="150px" color="white">
+  //     <Heading>errorType:{error}</Heading>
+  //   </Center>;
+  // if (data)
   return (
     <SimpleGrid
       minChildWidth="300px"
@@ -10,7 +24,7 @@ const Projects = () => {
       maxW={{ base: "1250px", xl: "1500px" }}
       margin={"0 auto"}
     >
-      {ProjectExampleData.map((project) => (
+      {ProjectExampleData.map((project: ProjectProps) => (
         <ProjectCard
           key={project.descriptions.numberProject}
           descriptions={project.descriptions}

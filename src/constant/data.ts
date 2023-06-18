@@ -124,12 +124,6 @@ export const ProjectExampleData: ProjectProps[] = [
         id: 2,
         title: "Repository",
       },
-      {
-        icon: FaGithubSquare,
-        route: "/ruta3",
-        id: 3,
-        title: "GithubSquare",
-      },
     ],
   },
   {
@@ -156,12 +150,6 @@ export const ProjectExampleData: ProjectProps[] = [
         route: "/ruta2",
         id: 5,
         title: "Repository",
-      },
-      {
-        icon: FaGithubSquare,
-        route: "/ruta3",
-        id: 6,
-        title: "GithubSquare",
       },
     ],
   },

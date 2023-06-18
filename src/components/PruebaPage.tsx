@@ -1,5 +1,5 @@
-const PruebaPage = ({ params: { id } }: { params: { id: string } }) => {
-  return <div>PruebaPage{id}</div>;
+const PruebaPage = () => {
+  return <div>PruebaPage</div>;
 };
 
 export default PruebaPage;
