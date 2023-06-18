@@ -15,7 +15,7 @@ const Navbar = () => {
       zIndex={"modal"}
       py={2}
       px={4}
-      backdropFilter="blur(10px)"
+      backdropFilter={{ md: "blur(10px)" }}
     >
       <Logo />
       <NavigationLinks />
