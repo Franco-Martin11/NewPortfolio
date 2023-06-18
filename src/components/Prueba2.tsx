@@ -1,7 +1,5 @@
-import { Button, Container, HStack, Stack, Text } from "@chakra-ui/react";
-import Hero from "./Hero/Hero";
-import { GradientText, Projects } from ".";
-import AboutMe from "./AboutMe/AboutMe";
+import { Stack, Container, HStack, Button, Text } from "@chakra-ui/react";
+import { Hero, GradientText, Projects, AboutMe, ExperienceSection,  } from ".";
 
 const Prueba2 = () => {
   return (
@@ -29,9 +27,9 @@ const Prueba2 = () => {
             gap={4}
             flexWrap={"wrap"}
             spacing={0}
-            justifyContent={'space-between'}
+            justifyContent={"space-between"}
           >
-            <Text flex={"0 0 350px"} fontSize={'lg'} color={"palette.grayText"}>
+            <Text flex={"0 0 350px"} fontSize={"lg"} color={"palette.grayText"}>
               {" "}
               Explorá mis Proyectos Frontend con Interfases Intuitivas y
               Atractivas hechas en React y Vue
@@ -52,6 +50,7 @@ const Prueba2 = () => {
         <Projects />
       </Container>
       <AboutMe />
+      <ExperienceSection />
     </Stack>
   );
 };

@@ -1,4 +1,11 @@
-import { LinkRoute, MediaLink, Project, ProjectProps } from "../types/types";
+import {
+  ExperienceCard,
+  LinkRoute,
+  ListItem,
+  MediaLink,
+  Project,
+  ProjectProps,
+} from "../types/types";
 import { FaLinkedin, FaGithubSquare, FaLink } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 
@@ -152,5 +159,67 @@ export const ProjectExampleData: ProjectProps[] = [
         title: "Repository",
       },
     ],
+  },
+];
+
+const listResponsibilities: ListItem[] = [
+  {
+    title: "Desarrollo de interfaces de usuario",
+    id: "1",
+  },
+  {
+    title: "Optimización de rendimiento",
+    id: "2",
+  },
+  {
+    title: "Resolución de problemas de compatibilidad",
+    id: "3",
+  },
+  {
+    title: "Implementación de diseños responsivos",
+    id: "4",
+  },
+  {
+    title: "Colaboración con el equipo de diseño",
+    id: "5",
+  },
+];
+
+export const companiesExperience: ExperienceCard[] = [
+  {
+    companies: "Empresa 1 del sector IT",
+    date: "2019 - Presente",
+    listResponsibilities,
+    id: 1,
+  },
+  {
+    companies: "Empresa 2 del sector IT",
+    date: "2017 - 2019",
+    listResponsibilities,
+    id: 12,
+  },
+  {
+    companies: "Empresa 3 del sector IT",
+    date: "2015 - 2017",
+    listResponsibilities,
+    id: 123,
+  },
+  {
+    companies: "Empresa 4 del sector IT",
+    date: "2013 - 2015",
+    listResponsibilities,
+    id: 1234,
+  },
+  {
+    companies: "Empresa 5 del sector IT",
+    date: "2010 - 2013",
+    listResponsibilities,
+    id: 12345,
+  },
+  {
+    companies: "Empresa 6 del sector IT",
+    date: "2008 - 2010",
+    listResponsibilities,
+    id: 123456,
   },
 ];

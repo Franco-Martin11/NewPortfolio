@@ -50,3 +50,11 @@ export type ProjectProps = {
   route: string;
   hyperLink: HyperLinkItem[];
 };
+
+export type ListItem = { title: string; id: string };
+export interface ExperienceCard {
+  companies: string;
+  date: string;
+  listResponsibilities: ListItem[];
+  id?: number;
+}

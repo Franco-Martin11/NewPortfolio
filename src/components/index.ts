@@ -1,5 +1,6 @@
 export { default as AboutMe } from './AboutMe/AboutMe';
-export { default as Experience } from './Experience/Experience';
+export { default as ExperienceSection } from './Experience/ExperienceSection';
+export { default as ExperienceCard } from './Experience/components/ExperienceCard';
 export { default as GradientText } from './GradientText';
 export { default as Hero } from './Hero/Hero';
 export { default as AnchoreBox } from './Hero/components/AnchoreBox';
