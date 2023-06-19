@@ -1,5 +1,5 @@
 import { Route, Switch } from "wouter";
-import { Prueba2 } from "../components/Home";
+import { Home } from "../components/Home";
 
 const Routes = () => {
   //   const [location, navigate] = useLocation();
@@ -16,7 +16,7 @@ const Routes = () => {
         <Route path="/project/:id">
           {(params) => <PruebaPage params={params} />}
         </Route> */}
-        <Route path="/" component={Prueba2} />
+        <Route path="/" component={Home} />
       </Switch>
     </>
   );
