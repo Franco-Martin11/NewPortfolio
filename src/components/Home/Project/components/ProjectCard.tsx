@@ -84,13 +84,18 @@ const ProjectCard = ({ descriptions, image, hyperLink }: ProjectProps) => {
             ))}
           </HStack>
         </HStack>
-        <Text maxW={'full'}>{descriptions.paragraph}</Text>
+        <Text maxW={"full"}>{descriptions.paragraph}</Text>
 
         <Stack spacing={0} gap={4}>
           <Text>Tecnologies:</Text>
           <HStack maxW={"350px"} wrap={"wrap"} spacing={0} gap={2}>
             {listTecnologies.map((item) => (
               <Tag
+                _hover={{
+                  filter:
+                    "drop-shadow(0 0 1rem var(--chakra-colors-palette-secondaryPurple))",
+                  transition: "filter 0.25s ease",
+                }}
                 key={item.id}
                 size={"lg"}
                 colorScheme="purple"
