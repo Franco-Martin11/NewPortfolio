@@ -1,6 +1,5 @@
 import { Box, HStack, Text,chakra } from "@chakra-ui/react";
 import { useState } from "react";
-import { Link as WouterLink } from "wouter";
 import { LinkRuoteArray } from "../../../constant/data";
 import { handleDisableScroll, handleEnableScroll } from "../../../utils";
 
