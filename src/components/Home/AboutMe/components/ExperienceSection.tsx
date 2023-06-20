@@ -6,7 +6,7 @@ import { companiesExperience } from "../../../../constant/data";
 const ExperienceSection = () => {
   return (
     <Container id="experience" variant={"overlay"} as={"section"}>
-      <GradientText fontSize={"6xl"} text="EXPERIENCE" />
+      <GradientText fontSize={{ base: "4xl", xl: "6xl" }} text="EXPERIENCE" />
       <SimpleGrid
         justifyItems={"center"}
         px={{ base: 2, md: 0 }}

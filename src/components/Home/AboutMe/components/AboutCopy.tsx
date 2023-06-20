@@ -4,7 +4,7 @@ import { GradientText } from "../../..";
 const AboutCopy = () => {
   return (
     <HStack alignItems={"flex-start"} flexWrap={"wrap"} gap={8} px={2}>
-      <GradientText fontSize={{ base: "4xl", lg: "6xl" }} text="ABOUT ME" />
+      <GradientText fontSize={{ base: "4xl", xl: "6xl" }} text="ABOUT ME" />
       <Text
         fontSize={{ base: "lg", md: "xl" }}
         color={"palette.whiteText"}
