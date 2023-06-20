@@ -50,34 +50,28 @@ export const projectData: Project[] = [
 
 export const LinkRuoteArray: LinkRoute[] = [
   {
-    route: "/home",
-    id: 1,
-    title: "Home",
-    ariaLabel: "Link to home page",
-  },
-  {
-    route: "/about",
+    route: "#about",
     id: 2,
     title: "About",
     ariaLabel: "Link to about page",
   },
   {
-    route: "/products",
+    route: "#projects",
     id: 3,
-    title: "Products",
-    ariaLabel: "Link to products page",
+    title: "Projects",
+    ariaLabel: "Link to Projects page",
   },
   {
-    route: "/services",
+    route: "#experience",
     id: 4,
-    title: "Services",
-    ariaLabel: "Link to services page",
+    title: "Experience",
+    ariaLabel: "Link to Experience page",
   },
   {
     route: "/contact",
     id: 5,
     title: "Contact",
-    ariaLabel: "Link to contact page",
+    ariaLabel: "Link to Contact page",
   },
 ];
 
@@ -164,62 +158,49 @@ export const ProjectExampleData: ProjectProps[] = [
 
 const listResponsibilities: ListItem[] = [
   {
-    title: "Desarrollo de interfaces de usuario",
+    item: "Desarrollo de interfaces de usuario",
     id: "1",
   },
   {
-    title: "Optimización de rendimiento",
+    item: "Optimización de rendimiento",
     id: "2",
   },
   {
-    title: "Resolución de problemas de compatibilidad",
+    item: "Resolución de problemas de compatibilidad",
     id: "3",
   },
   {
-    title: "Implementación de diseños responsivos",
+    item: "Implementación de diseños responsivos",
     id: "4",
   },
   {
-    title: "Colaboración con el equipo de diseño",
+    item: "Colaboración con el equipo de diseño",
     id: "5",
   },
 ];
 
+const listTecnologies: ListItem[] = [
+  { item: "Vue", id: 1 },
+  { item: "Vuex", id: 12 },
+  { item: "React", id: 123 },
+  { item: "Redux", id: 1234 },
+  { item: "Nuxt", id: 12345 },
+  { item: "Tailwind", id: 123456 },
+];
+
 export const companiesExperience: ExperienceCard[] = [
   {
-    companies: "Empresa 1 del sector IT",
+    companies: "Xirect Software Solutions",
     date: "2019 - Presente",
     listResponsibilities,
+    listTecnologies,
     id: 1,
   },
   {
-    companies: "Empresa 2 del sector IT",
+    companies: "Dupan.io",
     date: "2017 - 2019",
     listResponsibilities,
+    listTecnologies,
     id: 12,
-  },
-  {
-    companies: "Empresa 3 del sector IT",
-    date: "2015 - 2017",
-    listResponsibilities,
-    id: 123,
-  },
-  {
-    companies: "Empresa 4 del sector IT",
-    date: "2013 - 2015",
-    listResponsibilities,
-    id: 1234,
-  },
-  {
-    companies: "Empresa 5 del sector IT",
-    date: "2010 - 2013",
-    listResponsibilities,
-    id: 12345,
-  },
-  {
-    companies: "Empresa 6 del sector IT",
-    date: "2008 - 2010",
-    listResponsibilities,
-    id: 123456,
   },
 ];

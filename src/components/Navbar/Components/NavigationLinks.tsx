@@ -14,7 +14,7 @@ const NavigationLinks = () => {
 
   const linkItems = LinkRuoteArray.map((link) => (
     <Text
-      as={WouterLink}
+      as={'a'}
       key={link.id}
       aria-label={link.ariaLabel}
       href={link.route}

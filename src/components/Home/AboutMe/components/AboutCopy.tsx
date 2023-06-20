@@ -3,9 +3,13 @@ import { GradientText } from "../../..";
 
 const AboutCopy = () => {
   return (
-    <HStack  alignItems={'flex-start'} flexWrap={"wrap"} gap={8}>
+    <HStack alignItems={"flex-start"} flexWrap={"wrap"} gap={8}>
       <GradientText fontSize={{ base: "4xl", lg: "6xl" }} text="ABOUT ME" />
-      <Text fontSize={"xl"} color={"palette.whiteText"} flex={"1 0 350px"}>
+      <Text
+        fontSize={{ base: "lg", md: "xl" }}
+        color={"palette.whiteText"}
+        flex={"1 0 350px"}
+      >
         As a Frontend Developer, I have expertise in using React with Typescript
         and Vue.js to create dynamic and engaging user interfaces. I have a
         solid understanding of Front-end web technologies, including HTML, CSS

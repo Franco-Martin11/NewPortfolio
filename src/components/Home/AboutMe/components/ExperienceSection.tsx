@@ -3,18 +3,25 @@ import ExperienceCard from "./ExperienceCard";
 import { GradientText } from "../../..";
 import { companiesExperience } from "../../../../constant/data";
 
-
 const ExperienceSection = () => {
   return (
-    <Container variant={"overlay"} as={"section"}>
+    <Container id="experience" variant={"overlay"} as={"section"}>
       <GradientText fontSize={"6xl"} text="EXPERIENCE" />
-      <SimpleGrid px={8} gap={8} minChildWidth={"350px"} spacing={0}>
+      <SimpleGrid
+        justifyItems={"center"}
+        px={{ base: 2, md: 0 }}
+        gap={8}
+        w={"full"}
+        minChildWidth={"350px"}
+        spacing={0}
+      >
         {companiesExperience.map((dataExpress) => (
           <ExperienceCard
             companies={dataExpress.companies}
             date={dataExpress.date}
             listResponsibilities={dataExpress.listResponsibilities}
             key={dataExpress.id}
+            listTecnologies={dataExpress.listTecnologies}
           />
         ))}
       </SimpleGrid>{" "}

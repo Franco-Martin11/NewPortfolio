@@ -13,7 +13,6 @@ import { SpinBox } from "../../..";
 import { ProjectProps } from "../../../../types/types";
 import { HandleMouseEvent } from "../../../../utils";
 
-
 const ProjectCard = ({ descriptions, image, hyperLink }: ProjectProps) => {
   const [isHovering, setIsHovering] = useState(false);
 
@@ -21,10 +20,12 @@ const ProjectCard = ({ descriptions, image, hyperLink }: ProjectProps) => {
     <HStack
       color={"white"}
       position={"relative"}
-      flexWrap={{ base: "wrap" }}
+      flexWrap={{ base: "wrap", lg: "nowrap" }}
+      flex={"1 0 350px"}
       flexDir={{ lg: "row-reverse" }}
       justifyContent={"center"}
-      gap={6}
+      spacing={0}
+      gap={8}
       onMouseOver={() => HandleMouseEvent.MouseOver(setIsHovering)}
       onMouseOut={() => HandleMouseEvent.MouseOut(setIsHovering)}
       _after={{
@@ -34,46 +35,42 @@ const ProjectCard = ({ descriptions, image, hyperLink }: ProjectProps) => {
         color: "#c7baff",
         fontWeight: "bold",
         position: "absolute",
-        left: "0",
-        top: "-40px",
+        right: "0",
+        top: "-30px",
         borderRadius: "full",
-        paddingY: 1,
-        paddingX: 2,
+        width: "46px",
+        textAlign: "center",
+        margin: "0",
+        // paddingY: 1,
+        // paddingX: 2,
         border: "1px solid white",
       }}
     >
-      <HStack
-        spacing={0}
-        gap={4}
-        justifyContent={"center"}
-        flex={1}
-        flexDir={{ lg: "column" }}
-      >
-        <Box position={"relative"} boxSize="250px">
-          <SpinBox
-            filter={
-              isHovering
-                ? "drop-shadow(0 0 1rem var(--chakra-colors-palette-secondaryPurple))"
-                : ""
-            }
-            transition={isHovering ? "filter 0.5s ease" : ""}
-            bgColor={"whiteAlpha.200"}
-            boxSize={"inherit"}
-          />
-          <Image
-            position={"absolute"}
-            inset={0}
-            src={image.srcUrl}
-            alt={image.alt}
-            boxSize={"inherit"}
-            borderRadius={"xl"}
-          />
-        </Box>
-        <Stack
-          flexDir={{ base: "column", lg: "row" }}
-          alignItems={{ lg: "flex-end" }}
-          gap={4}
-        >
+      <Box position={"relative"} boxSize={{ base: "250px", lg: "350px" }}>
+        <SpinBox
+          filter={
+            isHovering
+              ? "drop-shadow(0 0 1rem var(--chakra-colors-palette-secondaryPurple))"
+              : ""
+          }
+          transition={isHovering ? "filter 0.5s ease" : ""}
+          bgColor={"whiteAlpha.200"}
+          boxSize={"inherit"}
+        />
+        <Image
+          position={"absolute"}
+          inset={0}
+          src={image.srcUrl}
+          alt={image.alt}
+          boxSize={"inherit"}
+          borderRadius={"xl"}
+        />
+      </Box>
+
+      <Stack mt={"16"} spacing={0} gap={4} flex={"1 0 250PX"}>
+        <Heading>{descriptions.title}</Heading>
+        <Text>{descriptions.paragraph}</Text>
+        <HStack alignItems={{ lg: "flex-end" }} gap={4}>
           {hyperLink?.map((link) => (
             <Tooltip key={link.id} label={link.title} placement="bottom">
               <Link as={"a"} href={link.route}>
@@ -81,12 +78,7 @@ const ProjectCard = ({ descriptions, image, hyperLink }: ProjectProps) => {
               </Link>
             </Tooltip>
           ))}
-        </Stack>
-      </HStack>
-
-      <Stack mt={"16"} flex={"1 0 250PX"}>
-        <Heading>{descriptions.title}</Heading>
-        <Text>{descriptions.paragraph}</Text>
+        </HStack>
       </Stack>
     </HStack>
   );

@@ -9,6 +9,7 @@ const AboutMe = () => {
       as={"section"}
       bgColor={"palette.sectionAbout"}
       gap={0}
+      id="about"
     >
       <Center
         w={"full"}

@@ -3,7 +3,7 @@ import { Link as WouterLink } from "wouter";
 
 const Logo = () => {
   return (
-    <WouterLink href="/project">
+    <WouterLink href="/">
       <Link
         _hover={{
           filter:
