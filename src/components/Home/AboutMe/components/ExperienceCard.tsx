@@ -25,6 +25,7 @@ const ExperienceCard = ({
       spacing={0}
       color={"white"}
       justifyContent={'space-between'}
+      px={2}
     >
       <Heading>{companies}</Heading>
       <Text>{date}</Text>

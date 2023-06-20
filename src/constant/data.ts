@@ -68,7 +68,7 @@ export const LinkRuoteArray: LinkRoute[] = [
     ariaLabel: "Link to Experience page",
   },
   {
-    route: "/contact",
+    route: "#contact",
     id: 5,
     title: "Contact",
     ariaLabel: "Link to Contact page",
@@ -77,7 +77,7 @@ export const LinkRuoteArray: LinkRoute[] = [
 
 export const MediaLinkArray: MediaLink[] = [
   {
-    route: "https://www.linkedin.com/in/franc-martin/",
+    route: "mailto:main.francomartin@gmail.com",
     ariaLabel: "Link to facebook page",
     label: "Gmail",
     id: 1,
@@ -179,7 +179,7 @@ const listResponsibilities: ListItem[] = [
   },
 ];
 
-const listTecnologies: ListItem[] = [
+export const listTecnologies: ListItem[] = [
   { item: "Vue", id: 1 },
   { item: "Vuex", id: 12 },
   { item: "React", id: 123 },

@@ -10,12 +10,12 @@ const Projects = () => {
       <HeaderSection />
       <HStack
         flexWrap={"wrap"}
-        gap={{ base: 14, md: 8 }}
+        gap={{ base: 14 }}
         w={"full"}
         maxW={{ base: "1250px", xl: "1500px" }}
         margin={"0 auto"}
         my={8}
-        px={{ sm: 4 }}
+        px={{ sm: 4, md: 0 }}
       >
         {ProjectExampleData.map((project: ProjectProps) => (
           <ProjectCard

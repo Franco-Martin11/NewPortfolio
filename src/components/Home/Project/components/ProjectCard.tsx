@@ -7,11 +7,15 @@ import {
   Image,
   Text,
   Link,
+  Avatar,
+  Tag,
+  TagLabel,
 } from "@chakra-ui/react";
 import { useState } from "react";
 import { SpinBox } from "../../..";
 import { ProjectProps } from "../../../../types/types";
 import { HandleMouseEvent } from "../../../../utils";
+import { listTecnologies } from "../../../../constant/data";
 
 const ProjectCard = ({ descriptions, image, hyperLink }: ProjectProps) => {
   const [isHovering, setIsHovering] = useState(false);
@@ -21,7 +25,7 @@ const ProjectCard = ({ descriptions, image, hyperLink }: ProjectProps) => {
       color={"white"}
       position={"relative"}
       flexWrap={{ base: "wrap", lg: "nowrap" }}
-      flex={"1 0 350px"}
+      flex={"1 0 300px"}
       flexDir={{ lg: "row-reverse" }}
       justifyContent={"center"}
       spacing={0}
@@ -67,18 +71,44 @@ const ProjectCard = ({ descriptions, image, hyperLink }: ProjectProps) => {
         />
       </Box>
 
-      <Stack mt={"16"} spacing={0} gap={4} flex={"1 0 250PX"}>
-        <Heading>{descriptions.title}</Heading>
-        <Text>{descriptions.paragraph}</Text>
-        <HStack alignItems={{ lg: "flex-end" }} gap={4}>
-          {hyperLink?.map((link) => (
-            <Tooltip key={link.id} label={link.title} placement="bottom">
-              <Link as={"a"} href={link.route}>
-                <link.icon size={"28px"} />
-              </Link>
-            </Tooltip>
-          ))}
+      <Stack mt={"16"} spacing={0} gap={8}>
+        <HStack spacing={0} gap={12} wrap={"wrap"}>
+          <Heading>{descriptions.title}</Heading>
+          <HStack alignItems={{ lg: "flex-end" }} gap={2}>
+            {hyperLink?.map((link) => (
+              <Tooltip key={link.id} label={link.title} placement="bottom">
+                <Link as={"a"} href={link.route}>
+                  <link.icon size={"28px"} />
+                </Link>
+              </Tooltip>
+            ))}
+          </HStack>
         </HStack>
+        <Text maxW={'full'}>{descriptions.paragraph}</Text>
+
+        <Stack spacing={0} gap={4}>
+          <Text>Tecnologies:</Text>
+          <HStack maxW={"350px"} wrap={"wrap"} spacing={0} gap={2}>
+            {listTecnologies.map((item) => (
+              <Tag
+                key={item.id}
+                size={"lg"}
+                colorScheme="purple"
+                borderRadius="full"
+                variant={"subtle"}
+              >
+                <Avatar
+                  src="https://bit.ly/sage-adebayo"
+                  size="2xs"
+                  name="Segun Adebayo"
+                  ml={-1}
+                  mr={2}
+                />
+                <TagLabel>{item.item}</TagLabel>
+              </Tag>
+            ))}{" "}
+          </HStack>
+        </Stack>
       </Stack>
     </HStack>
   );

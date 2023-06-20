@@ -12,7 +12,7 @@ const ExperienceSection = () => {
         px={{ base: 2, md: 0 }}
         gap={8}
         w={"full"}
-        minChildWidth={"350px"}
+        minChildWidth={"300px"}
         spacing={0}
       >
         {companiesExperience.map((dataExpress) => (
