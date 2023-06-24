@@ -31,14 +31,14 @@ const ExperienceCard = ({
       <Text>{date}</Text>
       <HStack spacing={0} gap={4} flexWrap={"wrap"}>
         {listResponsibilities && (
-          <UnorderedList spacing={0} maxW={"full"}>
+          <UnorderedList flex={'1 0 250px'} spacing={0} maxW={"full"}>
             {listResponsibilities.map((item) => (
               <ListItem key={item.id}>{item.item}</ListItem>
             ))}
           </UnorderedList>
         )}
         {listTecnologies && (
-          <>
+          <Stack spacing={0} gap={4}>
             <Text>Tecnologies</Text>
             <HStack flexWrap={"wrap"} spacing={0} gap={2}>
               {listTecnologies.map((item) => (
@@ -60,7 +60,7 @@ const ExperienceCard = ({
                 </Tag>
               ))}
             </HStack>{" "}
-          </>
+          </Stack>
         )}
       </HStack>
     </Stack>

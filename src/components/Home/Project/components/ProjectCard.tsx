@@ -50,11 +50,17 @@ const ProjectCard = ({ descriptions, image, hyperLink }: ProjectProps) => {
         border: "1px solid white",
       }}
     >
-      <Box position={"relative"} boxSize={{ base: "250px", lg: "350px" }}>
+      <Box
+        position={"relative"}
+        boxSize={{ base: "250px", lg: "400px", xl: "400px" }}
+      >
         <SpinBox
+          overflowX={"hidden"}
+          borderWidth='1px'
+          borderColor='whiteAlpha.300'
           filter={
             isHovering
-              ? "drop-shadow(0 0 1rem var(--chakra-colors-palette-secondaryPurple))"
+              ? "drop-shadow(0 0 3rem var(--chakra-colors-palette-secondaryPurple))"
               : ""
           }
           transition={isHovering ? "filter 0.5s ease" : ""}
@@ -68,6 +74,8 @@ const ProjectCard = ({ descriptions, image, hyperLink }: ProjectProps) => {
           alt={image.alt}
           boxSize={"inherit"}
           borderRadius={"xl"}
+          objectFit={'cover'}
+          objectPosition={'top'}
         />
       </Box>
 

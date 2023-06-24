@@ -5,6 +5,7 @@ import {
   MediaLink,
   Project,
   ProjectProps,
+  StackItem,
 } from "../types/types";
 import { FaLinkedin, FaGithubSquare, FaLink } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
@@ -108,7 +109,7 @@ export const ProjectExampleData: ProjectProps[] = [
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint illum commodi dolor impedit. Tempora non asperiores soluta commodi dolorum inventore earum magni?.Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint illum commodi dolor impedit. Tempora non asperiores soluta commodi dolorum inventore earum magni?",
     },
     image: {
-      srcUrl: "image5.jpg",
+      srcUrl: "/Desingno.jpg",
       alt: "Ejemplo de imagen",
     },
     route: "/ruta-ejemplo",
@@ -135,7 +136,7 @@ export const ProjectExampleData: ProjectProps[] = [
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint illum commodi dolor impedit. Tempora non asperiores soluta commodi dolorum inventore earum magni?.Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint illum commodi dolor impedit. Tempora non asperiores soluta commodi dolorum inventore earum magni?",
     },
     image: {
-      srcUrl: "image6.jpg",
+      srcUrl: "/DesingnoLG.png",
       alt: "Ejemplo de imagen",
     },
     route: "/ruta-ejemplo",
@@ -158,23 +159,23 @@ export const ProjectExampleData: ProjectProps[] = [
 
 const listResponsibilities: ListItem[] = [
   {
-    item: "Desarrollo de interfaces de usuario",
+    item: "User interface development",
     id: "1",
   },
   {
-    item: "Optimización de rendimiento",
+    item: "Performance optimization",
     id: "2",
   },
   {
-    item: "Resolución de problemas de compatibilidad",
+    item: "Solving compatibility issues",
     id: "3",
   },
   {
-    item: "Implementación de diseños responsivos",
+    item: "Implementation of responsive designs",
     id: "4",
   },
   {
-    item: "Colaboración con el equipo de diseño",
+    item: "Collaboration with the design team",
     id: "5",
   },
 ];
@@ -204,3 +205,4 @@ export const companiesExperience: ExperienceCard[] = [
     id: 12,
   },
 ];
+

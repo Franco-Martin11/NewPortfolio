@@ -6,7 +6,7 @@ const HeaderSection = () => {
     <HStack as={"header"} flexWrap={"wrap"} gap={4} spacing={0}>
       <GradientText
         fontSize={{ base: "2xl", xl: "4xl" }}
-        text="  Impulsando la Experiencia del Usuario a través de Aplicaciones Web Modernas"
+        text=" Driving User Experience through Modern Web Applications"
         flex={"1 0 300px"}
       />
       <HStack
@@ -19,8 +19,8 @@ const HeaderSection = () => {
       >
         <Text flex={"0 0 300px"} fontSize={"lg"} color={"palette.grayText"}>
           {" "}
-          Explorá mis Proyectos Frontend con Interfases Intuitivas y Atractivas
-          hechas en React y Vue
+          Explore my Frontend Projects with Intuitive and Attractive Interfaces
+          made in React and Vue
         </Text>
         <HStack flex={"0 0 300px"}>
           <Button variant={"ghost"} colorScheme="purple">

@@ -1,6 +1,7 @@
 import { Center, Container } from "@chakra-ui/react";
 import AboutCopy from "./components/AboutCopy";
 import { ExperienceSection } from "..";
+import { GradientDivider } from "../..";
 
 const AboutMe = () => {
   return (
@@ -27,6 +28,7 @@ const AboutMe = () => {
         <AboutCopy />
         <ExperienceSection />
       </Container>
+        <GradientDivider />
     </Container>
   );
 };

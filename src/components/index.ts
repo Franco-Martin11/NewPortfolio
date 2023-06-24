@@ -1,10 +1,14 @@
+export { default as GradientDivider } from './GradientDivider';
 export { default as GradientText } from './GradientText';
 export { default as AboutMe } from './Home/AboutMe/AboutMe';
 export * from './Home/AboutMe/components';
+export { default as FooterSection } from './Home/Footer/FooterSection';
 export { default as Hero } from './Home/Hero/Hero';
 export * from './Home/Hero/components';
 export { default as Projects } from './Home/Project/Projects';
 export * from './Home/Project/components';
+export { default as StackSection } from './Home/Stack/StackSection';
+export { default as StackCardComponent } from './Home/Stack/components/StackCardComponent';
 export * from './Home';
 export * from './Icons';
 export { default as Logo } from './Navbar/Components/Logo';

@@ -59,3 +59,9 @@ export interface ExperienceCard {
   listTecnologies: ListItem[];
   id?: number;
 }
+
+export type StackItem = {
+  src: IconType;
+  alt: string;
+  id?: number;
+};
