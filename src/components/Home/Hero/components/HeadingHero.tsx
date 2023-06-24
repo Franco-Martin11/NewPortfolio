@@ -44,7 +44,11 @@ const HeadingHero = () => {
         text="SOLUTIONS"
         fontSize={{ base: "2.5rem", md: "4rem", xl: "5rem" }}
       />
-      <GradientText text="Franco Martin / Frontend Developer" as="h1" />
+      <GradientText
+        textAlign="center"
+        text="Franco Martin / Frontend Developer"
+        as="h1"
+      />
     </Stack>
   );
 };

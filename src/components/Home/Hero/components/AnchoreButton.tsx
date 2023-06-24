@@ -8,7 +8,7 @@ const AnchoreButton = ({
   id,
   label,
 }: MediaLink) => {
-  const handleDownloadPdf = () => window.open(route, '_blank');
+  const handleDownloadPdf = () => window.open(route, "_blank");
   return (
     <Tooltip
       defaultIsOpen={true}
@@ -16,6 +16,7 @@ const AnchoreButton = ({
       key={id}
       label={label}
       placement="left"
+      display={{base:'none',md:'flex'}}
     >
       {id !== 4 ? (
         <Box
