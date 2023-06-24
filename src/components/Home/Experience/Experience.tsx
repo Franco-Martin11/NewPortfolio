@@ -1,9 +1,8 @@
-import { Center, Container } from "@chakra-ui/react";
-import AboutCopy from "./components/AboutCopy";
+import { Container } from "@chakra-ui/react";
 import { ExperienceSection } from "..";
 import { GradientDivider } from "../..";
 
-const AboutMe = () => {
+const Experience = () => {
   return (
     <Container
       variant={"overlay"}
@@ -12,12 +11,7 @@ const AboutMe = () => {
       gap={0}
       id="about"
     >
-      <Center
-        w={"full"}
-        backgroundSize={{ base: "auto", md: "cover" }}
-        backgroundImage={'url("/FrameHome.svg")'}
-        minH={"5vh"}
-      />
+ <GradientDivider />
       <Container
         variant={"section"}
         minH={"fit-content"}
@@ -25,12 +19,11 @@ const AboutMe = () => {
         py={8}
         gap={16}
       >
-        <AboutCopy />
         <ExperienceSection />
       </Container>
-        <GradientDivider />
+       
     </Container>
   );
 };
 
-export default AboutMe;
+export default Experience;

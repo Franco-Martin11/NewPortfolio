@@ -1,5 +1,5 @@
 import { Stack } from "@chakra-ui/react";
-import { Hero, Projects, AboutMe, StackSection } from ".";
+import { Hero, Projects, StackSection, Experience } from ".";
 import FooterSection from "./Footer/FooterSection";
 
 const Home = () => {
@@ -8,7 +8,7 @@ const Home = () => {
       <Hero />
       <StackSection />
       <Projects />
-      <AboutMe />
+      <Experience />
       <FooterSection />
     </Stack>
   );

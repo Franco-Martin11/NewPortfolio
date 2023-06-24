@@ -16,26 +16,6 @@ import { StackItem } from "../types/types";
 
 export const StackItemArray: StackItem[] = [
   {
-    src: SiReact,
-    alt: "react",
-    id: 1,
-  },
-  {
-    src: SiVuedotjs,
-    alt: "vue",
-    id: 2,
-  },
-  {
-    src: SiRedux,
-    alt: "redux",
-    id: 3,
-  },
-  {
-    src: SiVuedotjs,
-    alt: "vuex",
-    id: 4,
-  },
-  {
     src: SiHtml5,
     alt: "html",
     id: 5,
@@ -46,9 +26,24 @@ export const StackItemArray: StackItem[] = [
     id: 6,
   },
   {
-    src: SiFigma,
-    alt: "figma",
-    id: 7,
+    src: SiJavascript,
+    alt: "javascript",
+    id: 10,
+  },
+  {
+    src: SiTypescript,
+    alt: "typescript",
+    id: 11,
+  },
+  {
+    src: SiReact,
+    alt: "react",
+    id: 1,
+  },
+  {
+    src: SiRedux,
+    alt: "redux",
+    id: 3,
   },
   {
     src: SiChakraui,
@@ -56,25 +51,34 @@ export const StackItemArray: StackItem[] = [
     id: 8,
   },
   {
+    src: SiVuedotjs,
+    alt: "vue",
+    id: 2,
+  },
+  {
+    src: SiVuedotjs,
+    alt: "vuex",
+    id: 4,
+  },
+
+  {
+    src: SiFigma,
+    alt: "figma",
+    id: 7,
+  },
+
+  {
     src: SiVuetify,
     alt: "vuetify",
     id: 9,
   },
-  {
-    src: SiJavascript,
-    alt: "javascript",
-    id: 10,
-  },
+
   {
     src: SiGit,
     alt: "git",
     id: 12,
   },
-  {
-    src: SiTypescript,
-    alt: "typescript",
-    id: 11,
-  },
+
   {
     src: SiGithub,
     alt: "github",

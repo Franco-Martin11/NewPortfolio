@@ -8,15 +8,15 @@ const StackCardComponent = (props: StackItem) => {
       aria-label={props.alt}
       placement="bottom"
       textTransform={"capitalize"}
-      colorScheme="purple"
-      defaultIsOpen={true}
+      bg={'palette.primaryViolet'}
+      isOpen={true}
       fontSize={"md"}
     >
       <Box
         p={2}
         boxSize={{ base: "48px", md: "58px", xl: "68px", "2xl": "88px" }}
       >
-        <props.src size={"inherit"} color="white" />
+        <props.src size={"100%"} color="white" />
       </Box>
     </Tooltip>
   );

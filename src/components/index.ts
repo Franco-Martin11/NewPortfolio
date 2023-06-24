@@ -1,6 +1,6 @@
 export { default as GradientDivider } from './GradientDivider';
 export { default as GradientText } from './GradientText';
-export { default as AboutMe } from './Home/AboutMe/AboutMe';
+export { default as AboutMe } from './Home/AboutMe/Experience';
 export * from './Home/AboutMe/components';
 export { default as FooterSection } from './Home/Footer/FooterSection';
 export { default as Hero } from './Home/Hero/Hero';

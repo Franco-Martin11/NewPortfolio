@@ -5,7 +5,6 @@ import {
   MediaLink,
   Project,
   ProjectProps,
-  StackItem,
 } from "../types/types";
 import { FaLinkedin, FaGithubSquare, FaLink } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
@@ -205,4 +204,3 @@ export const companiesExperience: ExperienceCard[] = [
     id: 12,
   },
 ];
-

@@ -25,13 +25,23 @@ const FooterSection = () => {
       minHeight={"25px"}
       mb={"12 !important"}
     >
-      <GradientText fontSize={{ base: "4xl", xl: "6xl" }} flex="1 0 200px" text="CONTACT" />
+      <GradientText
+        fontSize={{ base: "4xl", xl: "6xl" }}
+        flex="1 0 200px"
+        text="CONTACT"
+      />
 
-      <Stack color={"white"} flex="1 0 200px" spacing={0} gap={4}>
-        <Heading size={"md"}>Titulo</Heading>
+      <Stack
+        color={"white"}
+        textTransform={"capitalize"}
+        flex="1 0 200px"
+        spacing={0}
+        gap={4}
+      >
+        <Heading size={"md"}>I encourage you to do it</Heading>
         <Text size={"md"}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-          atque dolorum nihil.
+          if you want to know more about me and my experience in the programming
+          world, do not hesitate to contact me.
         </Text>
       </Stack>
 
@@ -41,10 +51,16 @@ const FooterSection = () => {
         flex="1 0 200px"
         flexWrap={"wrap"}
         spacing={0}
-        gap={4}
+        gap={10}
       >
         {MediaLinkArray.map((media) => (
-          <Tooltip key={media.id} label={media.label} placement="left">
+          <Tooltip
+            key={media.id}
+            label={media.label}
+            placement="bottom"
+            defaultIsOpen={true}
+            bg={'palette.secondaryPurple'}
+          >
             <Box
               as="a"
               rel="noopener"

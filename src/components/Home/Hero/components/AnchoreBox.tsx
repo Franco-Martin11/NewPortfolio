@@ -16,7 +16,8 @@ const AnchoreBox = () => {
     >
       {MediaLinkArray.map((media) => (
         <Tooltip
-
+          defaultIsOpen={true}
+          bg={"palette.secondaryPurple"}
           key={media.id}
           label={media.label}
           placement="left"
