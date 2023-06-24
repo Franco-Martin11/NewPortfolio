@@ -6,7 +6,7 @@ const HeadingHero = () => {
     <Stack
       position={{ base: "inherit", md: "absolute" }}
       maxW={"1200px"}
-      bottom={{ base: 0, md: "50px", lg: 8 }}
+      bottom={{ base: 0, md: "50px", lg: 10 }}
       px={{ md: 8 }}
       alignItems={"center"}
     >
@@ -44,6 +44,7 @@ const HeadingHero = () => {
         text="SOLUTIONS"
         fontSize={{ base: "2.5rem", md: "4rem", xl: "5rem" }}
       />
+      <GradientText text="Franco Martin / Frontend Developer" as="h1" />
     </Stack>
   );
 };

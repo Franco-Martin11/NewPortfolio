@@ -1,7 +1,6 @@
 import { Stack } from "@chakra-ui/react";
 import { CardHeading, AnchoreBox, HeadingHero } from "..";
 
-
 const Hero = () => {
   return (
     <Stack
