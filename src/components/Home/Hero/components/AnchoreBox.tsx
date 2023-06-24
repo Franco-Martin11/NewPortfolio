@@ -1,5 +1,6 @@
-import { Box, Stack, Tooltip } from "@chakra-ui/react";
+import { Stack } from "@chakra-ui/react";
 import { MediaLinkArray } from "../../../../constant/data";
+import AnchoreButton from "./AnchoreButton";
 
 const AnchoreBox = () => {
   return (
@@ -15,28 +16,13 @@ const AnchoreBox = () => {
       pr={{ base: 0, md: 8 }}
     >
       {MediaLinkArray.map((media) => (
-        <Tooltip
-          defaultIsOpen={true}
-          bg={"palette.secondaryPurple"}
-          key={media.id}
+        <AnchoreButton
+          route={media.route}
+          ariaLabel={media.ariaLabel}
+          id={media.id}
           label={media.label}
-          placement="left"
-        >
-          <Box
-            as="a"
-            _hover={{
-              filter:
-                "drop-shadow(0 0 1rem var(--chakra-colors-palette-secondaryPurple))",
-              transition: "filter 0.25s ease",
-            }}
-            rel="noopener"
-            target="_blank"
-            href={media.route}
-            aria-label={media.ariaLabel}
-          >
-            <media.icon size="32px" />
-          </Box>
-        </Tooltip>
+          icon={media.icon}
+        />
       ))}{" "}
     </Stack>
   );

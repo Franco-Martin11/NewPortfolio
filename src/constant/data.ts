@@ -7,6 +7,7 @@ import {
   ProjectProps,
 } from "../types/types";
 import { FaLinkedin, FaGithubSquare, FaLink } from "react-icons/fa";
+import { MdPictureAsPdf } from "react-icons/md";
 import { SiGmail } from "react-icons/si";
 
 export const projectData: Project[] = [
@@ -96,6 +97,13 @@ export const MediaLinkArray: MediaLink[] = [
     id: 3,
     label: "Linkedin",
     icon: FaLinkedin,
+  },
+  {
+    route: "/CV-FrontendDeveloper.pdf",
+    ariaLabel: "Link to download curriculum",
+    id: 4,
+    label: "Curriculum",
+    icon: MdPictureAsPdf,
   },
 ];
 

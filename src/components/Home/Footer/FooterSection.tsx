@@ -53,13 +53,13 @@ const FooterSection = () => {
         spacing={0}
         gap={10}
       >
-        {MediaLinkArray.map((media) => (
+        {MediaLinkArray.slice(0, 3).map((media) => (
           <Tooltip
             key={media.id}
             label={media.label}
             placement="bottom"
             defaultIsOpen={true}
-            bg={'palette.secondaryPurple'}
+            bg={"palette.secondaryPurple"}
           >
             <Box
               as="a"
