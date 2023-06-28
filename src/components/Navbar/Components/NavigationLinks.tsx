@@ -3,14 +3,14 @@ import { useState } from "react";
 import { LinkRuoteArray } from "../../../constant/data";
 import { CloseIcon } from "../..";
 
-const NavigationLinks = () => {
-  const [pulse, setPulse] = useState(false);
+const NavigationLinks: React.FC = () => {
+  const [pulse, setPulse] = useState<boolean>(false);
 
-  const handleClick = () => {
+  const handleClick = (): void => {
     setPulse((prevState) => !prevState);
   };
 
-  const handleFocus = () => {
+  const handleFocus = (): void => {
     setTimeout(() => {
       setPulse((prevState) => !prevState);
     }, 300);
