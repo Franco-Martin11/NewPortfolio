@@ -2,5 +2,31 @@
 @import url(./font/Satoshi/Fonts/WEB/css/satoshi.css);
 
 html {
-    scroll-behavior: smooth;
-    }
+  scroll-behavior: smooth;
+}
+
+#navbar li {
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+}
+
+#navbar li a {
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+#navbar li a:hover,
+#navbar li a.active {
+  color: #9a7bee;
+}
+
+#navbar li a:hover::after,
+#navbar li a.active::after {
+  content: "";
+  width: 30%;
+  height: 2px;
+  background: #9a7bee;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}

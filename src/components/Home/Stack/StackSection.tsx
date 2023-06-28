@@ -16,7 +16,7 @@ const StackSection = () => {
       <GradientDivider />
       <Container flex={1} variant={"section"} minH={"fit-content"} px={4}>
         <AboutCopy />
-        <SimpleGrid minChildWidth={"48px"} px={[0, 2]} spacing={0} gap={10}>
+        <SimpleGrid minChildWidth={'78px'} px={[0, 2]} spacing={0} gap={10}>
           {StackItemArray.map((stackItem) => (
             <StackCardComponent
               key={stackItem.id}

@@ -1,24 +1,22 @@
-import { Box, Tooltip } from "@chakra-ui/react";
+import { Stack, Tag } from "@chakra-ui/react";
 import { StackItem } from "../../../../types/types";
 
 const StackCardComponent = (props: StackItem) => {
   return (
-    <Tooltip
-      label={props.alt}
-      aria-label={props.alt}
-      placement="bottom"
-      textTransform={"capitalize"}
-      bg={'palette.primaryViolet'}
-      isOpen={true}
-      fontSize={"md"}
-    >
-      <Box
+    <Stack align={'center'} spacing={0} gap={4}>
+      <props.src size={"48px"} color="white" />
+      <Tag
+      flex={1}
+        colorScheme="purple"
+        fontSize={"md"}
+        textTransform={"capitalize"}
+        aria-label={props.alt}
+        textAlign={"center"}
         p={2}
-        boxSize={{ base: "48px", md: "58px", xl: "68px", "2xl": "88px" }}
       >
-        <props.src size={"100%"} color="white" />
-      </Box>
-    </Tooltip>
+        {props.alt}
+      </Tag>
+    </Stack>
   );
 };
 

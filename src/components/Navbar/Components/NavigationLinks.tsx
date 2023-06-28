@@ -1,31 +1,41 @@
-import { Box, HStack, Text,chakra } from "@chakra-ui/react";
+import { Box, HStack, Link } from "@chakra-ui/react";
 import { useState } from "react";
 import { LinkRuoteArray } from "../../../constant/data";
-import { handleDisableScroll, handleEnableScroll } from "../../../utils";
+import { CloseIcon } from "../..";
 
 const NavigationLinks = () => {
   const [pulse, setPulse] = useState(false);
 
-  const handleClick = async () => {
+  const handleClick = () => {
     setPulse((prevState) => !prevState);
-    !pulse ? handleDisableScroll() : handleEnableScroll();
+  };
+
+  const handleFocus = () => {
+    setTimeout(() => {
+      setPulse((prevState) => !prevState);
+    }, 300);
   };
 
   const linkItems = LinkRuoteArray.map((link) => (
-    <Text
-      as={'a'}
-      key={link.id}
-      aria-label={link.ariaLabel}
-      href={link.route}
-      fontSize={{ base: "xl", lg: "lg", xl: "xl" }}
-    >
-      {link.title}
-    </Text>
+    <li key={link.id}>
+      <Link
+        as="a"
+        _active={{ color: "red.500" }}
+        aria-label={link.ariaLabel}
+        href={link.route}
+        fontSize={{ base: "xl", lg: "lg", xl: "xl" }}
+        onClick={handleFocus}
+      >
+        {link.title}
+      </Link>
+    </li>
   ));
 
   return (
     <>
       <HStack
+        as="ul"
+        id="navbar"
         display={{ base: `${!pulse ? "none" : "flex"}`, md: "flex" }}
         position={{ base: "absolute", md: "initial" }}
         flexDirection={{ base: "column", md: "row" }}
@@ -43,46 +53,18 @@ const NavigationLinks = () => {
         {linkItems}
       </HStack>
       <Box
-        boxSize={"48px"}
+        boxSize="48px"
         p={2}
-        backgroundImage={'url("/CircleCTA.svg")'}
+        backgroundImage='url("/CircleCTA.svg")'
         title="HamburgerMenuButton"
         type="button"
         onClick={handleClick}
         as="button"
         zIndex="modal"
         display={{ md: "none" }}
-        position={"relative"}
+        position="relative"
       >
-        {!pulse ? (
-          "🍔"
-        ) : (
-          <chakra.svg
-            margin="auto"
-            width="18"
-            height="18"
-            viewBox="0 0 18 18"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <line
-              x1="1.98937"
-              y1="1.93934"
-              x2="16.1315"
-              y2="16.0815"
-              stroke="white"
-              strokeWidth="3"
-            />
-            <line
-              x1="1.86805"
-              y1="15.9393"
-              x2="16.0102"
-              y2="1.7972"
-              stroke="white"
-              strokeWidth="3"
-            />
-          </chakra.svg>
-        )}
+        {!pulse ? "🍔" : <CloseIcon />}
       </Box>
     </>
   );
