@@ -1,4 +1,4 @@
-import { HStack, Button, Text } from "@chakra-ui/react";
+import { HStack, Text } from "@chakra-ui/react";
 import { GradientText } from "../../..";
 
 const HeaderSection = () => {
@@ -22,7 +22,7 @@ const HeaderSection = () => {
           Explore my Frontend Projects with Intuitive and Attractive Interfaces
           made in React and Vue
         </Text>
-        <HStack flex={"0 0 300px"}>
+        {/* <HStack flex={"0 0 300px"}>
           <Button variant={"ghost"} colorScheme="purple">
             React.js
           </Button>
@@ -32,7 +32,7 @@ const HeaderSection = () => {
           <Button variant={"solid"} colorScheme="purple">
             All
           </Button>
-        </HStack>
+        </HStack> */}
       </HStack>
     </HStack>
   );
