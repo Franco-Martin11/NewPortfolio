@@ -116,7 +116,7 @@ export const ProjectExampleData: ProjectProps[] = [
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint illum commodi dolor impedit. Tempora non asperiores soluta commodi dolorum inventore earum magni?.Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint illum commodi dolor impedit. Tempora non asperiores soluta commodi dolorum inventore earum magni?",
     },
     image: {
-      srcUrl: "/Desingno.jpg",
+      srcUrl: "/Yomeanimo-Traveling.png",
       alt: "Ejemplo de imagen",
     },
     route: "/ruta-ejemplo",

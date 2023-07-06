@@ -26,19 +26,19 @@ export type MediaLink = {
 
 export type SetIsHovering = Dispatch<SetStateAction<boolean>>;
 
-type ImageProps = {
+export type ImageProps = {
   srcUrl: string;
   alt: string;
 };
 
-type HyperLinkItem = {
+export type HyperLinkItem = {
   icon: IconType;
   route: string;
   id: number;
   title: string;
 };
 
-type DescriptionProps = {
+export type DescriptionProps = {
   numberProject: number;
   title: string;
   paragraph: string;
