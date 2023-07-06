@@ -38,7 +38,7 @@ export const StackItemArray: StackItem[] = [
   {
     src: SiReact,
     alt: "react",
-    id: 1,
+    id: 1123123
   },
   {
     src: SiRedux,

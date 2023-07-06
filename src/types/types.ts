@@ -19,7 +19,7 @@ export type LinkRoute = {
 export type MediaLink = {
   route: string;
   ariaLabel: string;
-  id: number;
+  id?: number;
   label: string;
   icon: IconType;
 };
@@ -29,6 +29,7 @@ export type SetIsHovering = Dispatch<SetStateAction<boolean>>;
 export type ImageProps = {
   srcUrl: string;
   alt: string;
+  scroll?: boolean;
 };
 
 export type HyperLinkItem = {

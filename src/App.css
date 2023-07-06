@@ -30,3 +30,12 @@ html {
   bottom: -4px;
   left: 20px;
 }
+
+.ScollHover {
+  object-position: top;
+  transition: object-position 4s ease;
+}
+
+.ScollHover:hover {
+  object-position: 0 -750px; /* Posición al hacer hover */
+}

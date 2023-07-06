@@ -13,7 +13,6 @@ const AnchoreButton = ({
     <Tooltip
       defaultIsOpen={true}
       bg={"palette.secondaryPurple"}
-      key={id}
       label={label}
       placement="left"
       display={{base:'none',md:'flex'}}

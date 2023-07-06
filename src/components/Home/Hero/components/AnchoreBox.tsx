@@ -1,6 +1,7 @@
 import { Stack } from "@chakra-ui/react";
 import { MediaLinkArray } from "../../../../constant/data";
 import AnchoreButton from "./AnchoreButton";
+import { uuidGenerator } from "../../../../utils";
 
 const AnchoreBox = () => {
   return (
@@ -19,9 +20,9 @@ const AnchoreBox = () => {
         <AnchoreButton
           route={media.route}
           ariaLabel={media.ariaLabel}
-          id={media.id}
           label={media.label}
           icon={media.icon}
+          key={uuidGenerator()}
         />
       ))}{" "}
     </Stack>

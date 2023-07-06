@@ -9,6 +9,7 @@ import {
 } from "@chakra-ui/react";
 import { GradientText } from "../..";
 import { MediaLinkArray } from "../../../constant/data";
+import { uuidGenerator } from "../../../utils";
 
 const FooterSection = () => {
   return (
@@ -55,7 +56,7 @@ const FooterSection = () => {
       >
         {MediaLinkArray.slice(0, 3).map((media) => (
           <Tooltip
-            key={media.id}
+            key={uuidGenerator()}
             label={media.label}
             placement="bottom"
             defaultIsOpen={true}

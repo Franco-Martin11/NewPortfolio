@@ -37,3 +37,11 @@ export const HandleMouseEvent = {
     setIsHovering(false);
   },
 };
+
+import { v4 } from "uuid";
+
+export function uuidGenerator() {
+  const uuid = v4();
+  const truncatedUuid = uuid.replace(/-/g, "").slice(0, 8);
+  return truncatedUuid;
+}

@@ -37,12 +37,11 @@ const ProjectCard = ({
   const handleMouseOut = () => {
     HandleMouseEvent.MouseOut(setIsHovering);
   };
-
   return (
     <HStack
       color="white"
       position="relative"
-      flexWrap={{ base: "wrap", lg: "nowrap" }}
+      flexWrap={{ base: "wrap", xl: "nowrap" }}
       flex="1 0 300px"
       flexDir={{ lg: "row-reverse" }}
       justifyContent="center"
@@ -114,6 +113,7 @@ const ProjectImageBox = ({
       borderRadius="xl"
       objectFit="cover"
       objectPosition="top"
+      className={image.scroll === false ? "" : "ScollHover"}
     />
   </Box>
 );
@@ -127,7 +127,7 @@ const ProjectDetails = ({
 }) => (
   <Stack
     maxW={"400px"}
-    order={{ lg: 4 }}
+    order={{ xl: 4 }}
     mt="16"
     spacing={0}
     alignItems="flex-start"
