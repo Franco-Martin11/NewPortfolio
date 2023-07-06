@@ -11,8 +11,8 @@ const HeadingHero = () => {
       alignItems={"center"}
     >
       <GradientText
-        text="DIGITALIZING & CREATING"
-        fontSize={{ base: "2.5rem", md: "4rem", xl: "5rem" }}
+        text="LAYOUT, MERGE & CREATE"
+        fontSize={{ base: "2.5rem", md: "4rem", xl: "4.5rem" }}
         display="flex"
         flexDirection="column"
         textAlign="center"
@@ -28,7 +28,7 @@ const HeadingHero = () => {
         <Box borderRadius={"full"} px={4} py={2} bg={"palette.mainDarkBlue"}>
           <GradientText
             text="FRONTEND"
-            fontSize={{ base: "2.5rem", md: "4rem", xl: "5rem" }}
+            fontSize={{ base: "2.5rem", md: "4rem", xl: "4.5rem" }}
             sx={{
               background:
                 "linear-gradient(94.75deg, #94E4E2 3.81%, #BCEEED 82.98%, #FFFFFF 116.45%)",
@@ -42,7 +42,7 @@ const HeadingHero = () => {
       </Box>
       <GradientText
         text="SOLUTIONS"
-        fontSize={{ base: "2.5rem", md: "4rem", xl: "5rem" }}
+        fontSize={{ base: "2.5rem", md: "4rem", xl: "4.5rem" }}
       />
       <GradientText
         textAlign="center"
