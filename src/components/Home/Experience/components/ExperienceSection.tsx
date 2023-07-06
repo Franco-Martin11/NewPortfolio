@@ -12,7 +12,7 @@ const ExperienceSection = () => {
         px={{ base: 2, md: 0 }}
         gap={8}
         w={"full"}
-        minChildWidth={"300px"}
+        minChildWidth={{ base: "300px", md: "700px" }}
         spacing={0}
       >
         {companiesExperience.map((dataExpress) => (
@@ -21,7 +21,9 @@ const ExperienceSection = () => {
             date={dataExpress.date}
             listResponsibilities={dataExpress.listResponsibilities}
             key={dataExpress.id}
-            listTecnologies={dataExpress.listTecnologies} desciption={dataExpress.desciption}          />
+            listTecnologies={dataExpress.listTecnologies}
+            desciption={dataExpress.desciption}
+          />
         ))}
       </SimpleGrid>{" "}
     </Container>
