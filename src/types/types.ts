@@ -49,12 +49,14 @@ export type ProjectProps = {
   image: ImageProps;
   route: string;
   hyperLink: HyperLinkItem[];
+  listTecnologies: ListItem[];
 };
 
 export type ListItem = { item: string; id: number | string };
 export interface ExperienceCard {
   companies: string;
   date: string;
+  desciption: string;
   listResponsibilities: ListItem[];
   listTecnologies: ListItem[];
   id?: number;

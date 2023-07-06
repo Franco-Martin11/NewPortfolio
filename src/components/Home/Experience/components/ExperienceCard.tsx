@@ -15,6 +15,7 @@ const ExperienceCard = ({
   date,
   listResponsibilities,
   listTecnologies,
+  desciption,
 }: ExperienceType) => {
   return (
     <Stack
@@ -24,18 +25,25 @@ const ExperienceCard = ({
       gap={4}
       spacing={0}
       color={"white"}
-      justifyContent={'space-between'}
+      justifyContent={"flex-start"}
       px={2}
     >
       <Heading>{companies}</Heading>
       <Text>{date}</Text>
+      <Stack spacing={0} gap={2}>
+        <Text textColor={"gray.300"}>Description</Text>
+        <Text>{desciption}</Text>
+      </Stack>
+      <Text textColor={"gray.300"}>Responsibilities:</Text>
       <HStack spacing={0} gap={4} flexWrap={"wrap"}>
         {listResponsibilities && (
-          <UnorderedList flex={'1 0 250px'} spacing={0} maxW={"full"}>
-            {listResponsibilities.map((item) => (
-              <ListItem key={item.id}>{item.item}</ListItem>
-            ))}
-          </UnorderedList>
+          <>
+            <UnorderedList flex={"1 0 250px"} spacing={0} maxW={"full"}>
+              {listResponsibilities.map((item) => (
+                <ListItem key={item.id}>{item.item}</ListItem>
+              ))}
+            </UnorderedList>
+          </>
         )}
         {listTecnologies && (
           <Stack spacing={0} gap={4}>

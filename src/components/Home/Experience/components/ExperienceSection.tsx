@@ -21,8 +21,7 @@ const ExperienceSection = () => {
             date={dataExpress.date}
             listResponsibilities={dataExpress.listResponsibilities}
             key={dataExpress.id}
-            listTecnologies={dataExpress.listTecnologies}
-          />
+            listTecnologies={dataExpress.listTecnologies} desciption={dataExpress.desciption}          />
         ))}
       </SimpleGrid>{" "}
     </Container>
