@@ -80,13 +80,13 @@ export const ProjectExampleData: ProjectProps[] = [
     hyperLink: [
       {
         icon: FaLink,
-        route: "/ruta1",
+        route: "https://yomeanimo-chakra.netlify.app/",
         id: 123436798,
         title: "Deploy",
       },
       {
         icon: FaGithubSquare,
-        route: "/ruta2",
+        route: "https://github.com/Franco-Martin11/ReWork-Yomeanimo",
         id: 2,
         title: "Repository",
       },
@@ -119,13 +119,13 @@ export const ProjectExampleData: ProjectProps[] = [
     hyperLink: [
       {
         icon: FaLink,
-        route: "/ruta1",
+        route: "https://audiophile-ecommerce-pearl.vercel.app/",
         id: 4,
         title: "Deploy",
       },
       {
         icon: FaGithubSquare,
-        route: "/ruta2",
+        route: "https://github.com/Franco-Martin11/Audiophile-ecommerce",
         id: 5,
         title: "Repository",
       },
@@ -151,13 +151,13 @@ export const ProjectExampleData: ProjectProps[] = [
     hyperLink: [
       {
         icon: FaLink,
-        route: "/ruta1",
+        route: "https://designo-website.netlify.app/",
         id: 4,
         title: "Deploy",
       },
       {
         icon: FaGithubSquare,
-        route: "/ruta2",
+        route: "https://github.com/Franco-Martin11/DesignoWebSite",
         id: 5,
         title: "Repository",
       },
@@ -182,13 +182,13 @@ export const ProjectExampleData: ProjectProps[] = [
     hyperLink: [
       {
         icon: FaLink,
-        route: "/ruta1",
+        route: "https://claire-page-demo.netlify.app/",
         id: 4,
         title: "Deploy",
       },
       {
         icon: FaGithubSquare,
-        route: "/ruta2",
+        route: "https://github.com/Franco-Martin11/Claire-page",
         id: 5,
         title: "Repository",
       },
@@ -216,13 +216,13 @@ export const ProjectExampleData: ProjectProps[] = [
     hyperLink: [
       {
         icon: FaLink,
-        route: "/ruta1",
+        route: "",
         id: 4,
         title: "Deploy",
       },
       {
         icon: FaGithubSquare,
-        route: "/ruta2",
+        route: "",
         id: 5,
         title: "Repository",
       },
@@ -248,13 +248,13 @@ export const ProjectExampleData: ProjectProps[] = [
     hyperLink: [
       {
         icon: FaLink,
-        route: "/ruta1",
+        route: "",
         id: 4,
         title: "Deploy",
       },
       {
         icon: FaGithubSquare,
-        route: "/ruta2",
+        route: "",
         id: 5,
         title: "Repository",
       },
@@ -281,13 +281,13 @@ export const ProjectExampleData: ProjectProps[] = [
     hyperLink: [
       {
         icon: FaLink,
-        route: "/ruta1",
+        route: "https://freemarket-clone.netlify.app/",
         id: 4,
         title: "Deploy",
       },
       {
         icon: FaGithubSquare,
-        route: "/ruta2",
+        route: "https://github.com/Franco-Martin11/MercadoLibreCLONE",
         id: 5,
         title: "Repository",
       },

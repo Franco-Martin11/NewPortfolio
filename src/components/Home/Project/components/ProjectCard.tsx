@@ -136,13 +136,16 @@ const ProjectDetails = ({
     <HStack spacing={0} gap={4} wrap="wrap">
       <Heading>{descriptions.title}</Heading>
       <HStack alignItems="flex-end" gap={2}>
-        {hyperLink?.map((link) => (
-          <Tooltip key={link.id} label={link.title} placement="bottom">
-            <Link as="a" href={link.route}>
-              <link.icon size="28px" />
-            </Link>
-          </Tooltip>
-        ))}
+        {hyperLink?.map(
+          (link) =>
+            link.route && (
+              <Tooltip key={link.id} label={link.title} placement="bottom">
+                <Link as="a" target="_blank" href={link.route}>
+                  <link.icon size="28px" />
+                </Link>
+              </Tooltip>
+            )
+        )}
       </HStack>
     </HStack>
     <Text maxW="full">{descriptions.paragraph}</Text>
