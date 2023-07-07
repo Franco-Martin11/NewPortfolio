@@ -3,51 +3,12 @@ import {
   LinkRoute,
   ListItem,
   MediaLink,
-  Project,
   ProjectProps,
 } from "../types/types";
 import { FaLinkedin, FaGithubSquare, FaLink } from "react-icons/fa";
 import { MdPictureAsPdf } from "react-icons/md";
 import { SiGmail } from "react-icons/si";
 
-export const projectData: Project[] = [
-  {
-    title: "prueba",
-    imageSource: "./image5.jpg",
-    imageAlternate: "string",
-    routes: [
-      { url: "string", title: "repository", id: 22 },
-      { url: "/", title: "deploy", id: 32131879 },
-    ],
-  },
-  {
-    title: "prueba2",
-    imageSource: "./image6.jpg",
-    imageAlternate: "string2",
-    routes: [
-      { url: "string", title: "repository", id: 22 },
-      { url: "/", title: "deploy", id: 2 },
-    ],
-  },
-  {
-    title: "prueba",
-    imageSource: "./image5.jpg",
-    imageAlternate: "string",
-    routes: [
-      { url: "string", title: "repository", id: 22 },
-      { url: "/", title: "deploy", id: 3 },
-    ],
-  },
-  {
-    title: "prueba2",
-    imageSource: "./image6.jpg",
-    imageAlternate: "string2",
-    routes: [
-      { url: "string", title: "repository", id: 22 },
-      { url: "/", title: "deploy", id: 4 },
-    ],
-  },
-];
 
 export const LinkRuoteArray: LinkRoute[] = [
   {
@@ -112,7 +73,7 @@ export const ProjectExampleData: ProjectProps[] = [
         "The purpose of giving the exact information in relation to the country of the user and the country where he wants to arrive. These functionalities vary from types of visas, jobs, studies and important data at the time of arrival in a new country. It has personalized services, newsletters, blogs and community.",
     },
     image: {
-      srcUrl: "/Yomeanimo-Traveling.png",
+      srcUrl: "/Yomeanimo-Traveling.webp",
       alt: "Ejemplo de imagen",
     },
     route: "/ruta-ejemplo",
@@ -151,7 +112,7 @@ export const ProjectExampleData: ProjectProps[] = [
       { item: "Formik", id: 1234 },
     ],
     image: {
-      srcUrl: "/XX99-Mark-I-Headphones.png",
+      srcUrl: "/XX99-Mark-I-Headphones.webp",
       alt: "Ejemplo de imagen",
     },
     route: "/ruta-ejemplo",
@@ -183,7 +144,7 @@ export const ProjectExampleData: ProjectProps[] = [
       { item: "HTML5", id: 12132 },
     ],
     image: {
-      srcUrl: "/DESIGNO.png",
+      srcUrl: "/DESIGNO.webp",
       alt: "Ejemplo de imagen",
     },
     route: "/ruta-ejemplo",
@@ -214,7 +175,7 @@ export const ProjectExampleData: ProjectProps[] = [
       { item: "SASS", id: 342 },
     ],
     image: {
-      srcUrl: "/Claire-Magazine.png",
+      srcUrl: "/Claire-Magazine.webp",
       alt: "Ejemplo de imagen",
     },
     route: "/ruta-ejemplo",
@@ -247,7 +208,7 @@ export const ProjectExampleData: ProjectProps[] = [
       { item: "CSS Modules", id: 123 },
     ],
     image: {
-      srcUrl: "/BeerShop.png",
+      srcUrl: "/BeerShop.webp",
       alt: "Ejemplo de imagen",
       scroll: false,
     },
@@ -279,7 +240,7 @@ export const ProjectExampleData: ProjectProps[] = [
       { item: "CSS3", id: 12653 },
     ],
     image: {
-      srcUrl: "/FiloLanding.jpeg",
+      srcUrl: "/FiloLanding.webp",
       alt: "Ejemplo de imagen",
       scroll: false,
     },
@@ -313,7 +274,7 @@ export const ProjectExampleData: ProjectProps[] = [
       { item: "Wouter", id: 1234 },
     ],
     image: {
-      srcUrl: "/Mercadolibre-Clone.png",
+      srcUrl: "/Mercadolibre-Clone.webp",
       alt: "Ejemplo de imagen",
     },
     route: "/ruta-ejemplo",

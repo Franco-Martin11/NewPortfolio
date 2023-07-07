@@ -8,7 +8,6 @@ import {
   Image,
   Text,
   Link,
-  Avatar,
   Tag,
   TagLabel,
 } from "@chakra-ui/react";
@@ -171,13 +170,13 @@ const ProjectTechnologies = ({
           borderRadius="full"
           variant="subtle"
         >
-          <Avatar
+          {/* <Avatar
             src="https://bit.ly/sage-adebayo"
             size="2xs"
             name="Segun Adebayo"
             ml={-1}
             mr={2}
-          />
+          /> */}
           <TagLabel sx={{ "--chakra-line-clamp": "0" }} textOverflow={"clip"}>
             {item.item}
           </TagLabel>

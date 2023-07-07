@@ -5,7 +5,6 @@ import {
   ListItem,
   Text,
   HStack,
-  Avatar,
   Tag,
   TagLabel,
 } from "@chakra-ui/react";
@@ -57,14 +56,14 @@ const ExperienceCard = ({
                   borderRadius="full"
                   variant={"outline"}
                 >
-                  <Avatar
+                  {/* <Avatar
                     src="https://bit.ly/sage-adebayo"
                     size="2xs"
                     name="Segun Adebayo"
                     ml={-1}
                     mr={2}
-                  />
-                  <TagLabel>{item.item}</TagLabel>
+                  /> */}
+                  <TagLabel color={"#e9d8fd"}>{item.item}</TagLabel>
                 </Tag>
               ))}
             </HStack>{" "}

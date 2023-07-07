@@ -16,7 +16,7 @@ const CardHeading = () => {
       alignItems={"center"}
       opacity={{ base: 1, md: 0.25 }}
     >
-      <Image src="/PointsDetail.svg" alignSelf={"flex-start"} w={"48px"} />
+      <Image src="/PointsDetail.svg" alt="Three point icon" alignSelf={"flex-start"} w={"48px"} />
       <HStack>
         <GradientText text="LETS START THE PROJECT" />
 
@@ -40,7 +40,8 @@ const CardHeading = () => {
       </HStack>{" "}
       <Image
         boxSize={{ base: "3xs", md: "xs" }}
-        src="/codingImage.jpg"
+        alt="Coding Image"
+        src="/codingImage.webp"
         boxShadow="0px 0px 0px 20px #121220"
         borderRadius={"md"}
         aspectRatio={"1/1"}
