@@ -72,7 +72,7 @@ export const MediaLinkArray: MediaLink[] = [
 export const ProjectExampleData: ProjectProps[] = [
   {
     descriptions: {
-      numberProject: 10,
+      numberProject: 1,
       title: "Yo Me Animo Lading Page",
       paragraph:
         "The purpose of giving the exact information in relation to the country of the user and the country where he wants to arrive. These functionalities vary from types of visas, jobs, studies and important data at the time of arrival in a new country. It has personalized services, newsletters, blogs and community.",
@@ -105,7 +105,7 @@ export const ProjectExampleData: ProjectProps[] = [
   },
   {
     descriptions: {
-      numberProject: 10,
+      numberProject: 2,
       title: "Insight-Dashboard Aplication",
       paragraph:
         "The purpose of providing accurate information about the status of your personal finances and expenses. These functionalities range from visa types, transfers, pending projects, pending payments, credit history, tax history and different important data. It has an interactive dashboard and different sections that help you to have a more accurate and easy to understand financial overview of your income.",
@@ -142,7 +142,7 @@ export const ProjectExampleData: ProjectProps[] = [
   },
   {
     descriptions: {
-      numberProject: 112,
+      numberProject: 3,
       title: "AudioPhile E-Commerce",
       paragraph:
         "an audio e-commerce app built using Chakra UI, Next.js, Redux Toolkit, and Formik. This app combines stunning visual design with robust functionality, offering a seamless shopping experience for audio enthusiasts. With Chakra UI, the app showcases a sleek and intuitive interface. Next.js powers fast and efficient page loading, while Redux Toolkit ensures smooth state management. Formik simplifies form handling, making it easy for users to interact with the app. Explore the endless possibilities of audio shopping with this captivating and feature-rich e-commerce app.",
@@ -176,7 +176,7 @@ export const ProjectExampleData: ProjectProps[] = [
   },
   {
     descriptions: {
-      numberProject: 113,
+      numberProject: 4,
       title: "Designo Web Page",
       paragraph:
         "This application is a landing page that serves to publicize both designs and applications already created for our customers around the world, this business has several franchises throughout the world therefore serves as a platform for redirecting customers depending on the country or region where they are.",
@@ -209,7 +209,7 @@ export const ProjectExampleData: ProjectProps[] = [
   },
   {
     descriptions: {
-      numberProject: 114,
+      numberProject: 5,
       title: "MarieClaire Redesing",
       paragraph:
         "In this case I took the UI design of a very famous fashion magazine in Europe (Marie Claire) which I adapted using different styles and layouts.",
@@ -243,7 +243,7 @@ export const ProjectExampleData: ProjectProps[] = [
   },
   {
     descriptions: {
-      numberProject: 115,
+      numberProject: 6,
       title: "Beer Shop",
       paragraph:
         "a responsive app crafted with Next.js, SWR, and CSS Modules. Inspired by a design in Figma, this application showcases my expertise in creating seamless user experiences across various devices. Leveraging the power of Next.js, the app delivers fast loading times and server-side rendering. With SWR, data fetching becomes effortless, ensuring real-time updates. CSS Modules enable modular styling, maintaining code readability and scalability. Immerse yourself in the beauty of this responsive app and enjoy a smooth browsing experience..",
@@ -278,7 +278,7 @@ export const ProjectExampleData: ProjectProps[] = [
   },
   {
     descriptions: {
-      numberProject: 116,
+      numberProject: 7,
       title: "Filo Landing Page",
       paragraph:
         "A dynamic website crafted using HTML, CSS, and JavaScript. Drawing inspiration from a frontend mentor starter pack, this endeavor showcases my skills in creating interactive and visually appealing user interfaces. From seamless navigation to captivating animations, I've brought the design to life, ensuring a delightful user experience. Explore the harmonious blend of aesthetics and functionality as you interact with this frontend masterpiece.",
@@ -310,7 +310,7 @@ export const ProjectExampleData: ProjectProps[] = [
   },
   {
     descriptions: {
-      numberProject: 117,
+      numberProject: 8,
       title: "MercadoLibre Clone",
       paragraph:
         "In this case I took the UI design of a very famous ecommerce in Latin America (MercadoLibre) as a reference and made some changes in the layout and styles.",
@@ -455,7 +455,7 @@ export const companiesExperience: ExperienceCard[] = [
     
     Participated in the redesign of an old internal
     application built in ASP.NET.
-    
+
     Finally, the third application was a betting system that offered users a unique and intuitive gaming experience. All applications were developed using technologies such as Vue, Vuex, Nuxt.js, JWT, Axios and Vuetify.`,
     listTecnologies: listTecnologies.xirect,
     id: 11321123,

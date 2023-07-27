@@ -46,7 +46,7 @@ const HeadingHero = () => {
       />
       <GradientText
         textAlign="center"
-        text="Franco Martin / Frontend Developer"
+        text="Franco Martin / Frontend Developer - UX/UI "
         as="h1"
       />
     </Stack>
