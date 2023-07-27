@@ -56,10 +56,16 @@ export const MediaLinkArray: MediaLink[] = [
     label: "Linkedin",
     icon: FaLinkedin,
   },
+  // {
+  //   route: "/CV-FrontendDeveloper.pdf",
+  //   ariaLabel: "Link to download curriculum",
+  //   label: "Curriculum",
+  //   icon: MdPictureAsPdf,
+  // },
   {
-    route: "/CV-FrontendDeveloper.pdf",
+    route: "/CV-English.pdf",
     ariaLabel: "Link to download curriculum",
-    label: "Curriculum",
+    label: "Curriculum in English",
     icon: MdPictureAsPdf,
   },
 ];
