@@ -100,6 +100,42 @@ export const ProjectExampleData: ProjectProps[] = [
   },
   {
     descriptions: {
+      numberProject: 10,
+      title: "Insight-Dashboard Aplication",
+      paragraph:
+      "The purpose of providing accurate information about the status of your personal finances and expenses. These functionalities range from visa types, transfers, pending projects, pending payments, credit history, tax history and different important data. It has an interactive dashboard and different sections that help you to have a more accurate and easy to understand financial overview of your income.",
+    },
+    image: {
+      srcUrl: "/Dashboard-Vue.webp",
+      alt: "Ejemplo de imagen",
+      scroll: false,
+    },
+    route: "/ruta-ejemplo",
+    hyperLink: [
+      // {
+      //   icon: FaLink,
+      //   route: "https://yomeanimo-chakra.netlify.app/",
+      //   id: 1236798,
+      //   title: "Deploy",
+      // },
+      {
+        icon: FaGithubSquare,
+        route: "https://github.com/Franco-Martin11/Dashboard-Vue",
+        id: 21125,
+        title: "Repository",
+      },
+    ],
+    listTecnologies: [
+      { item: "Figma", id: 1212313 },
+      { item: "Vue.js", id: 12123 },
+      { item: "Vue Router", id: 132122 },
+      { item: "Tailwind", id: 123213 },
+      { item: "Apextchart", id: 122134 },
+      { item: "Motion", id: 121234 },
+    ],
+  },
+  {
+    descriptions: {
       numberProject: 112,
       title: "AudioPhile E-Commerce",
       paragraph:
