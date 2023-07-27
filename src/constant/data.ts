@@ -213,7 +213,9 @@ export const ProjectExampleData: ProjectProps[] = [
         "In this case I took the UI design of a very famous fashion magazine in Europe (Marie Claire) which I adapted using different styles and layouts.",
     },
     listTecnologies: [
-      { item: "HTML5", id: 131256 },
+      { item: "Figma", id: 131256 },
+      { item: "React.Js", id: 13132256 },
+      { item: "HTML5", id: 131213256 },
       { item: "SASS", id: 342 },
     ],
     image: {
