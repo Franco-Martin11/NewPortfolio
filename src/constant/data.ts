@@ -9,7 +9,6 @@ import { FaLinkedin, FaGithubSquare, FaLink } from "react-icons/fa";
 import { MdPictureAsPdf } from "react-icons/md";
 import { SiGmail } from "react-icons/si";
 
-
 export const LinkRuoteArray: LinkRoute[] = [
   {
     route: "#about",
@@ -109,7 +108,7 @@ export const ProjectExampleData: ProjectProps[] = [
       numberProject: 10,
       title: "Insight-Dashboard Aplication",
       paragraph:
-      "The purpose of providing accurate information about the status of your personal finances and expenses. These functionalities range from visa types, transfers, pending projects, pending payments, credit history, tax history and different important data. It has an interactive dashboard and different sections that help you to have a more accurate and easy to understand financial overview of your income.",
+        "The purpose of providing accurate information about the status of your personal finances and expenses. These functionalities range from visa types, transfers, pending projects, pending payments, credit history, tax history and different important data. It has an interactive dashboard and different sections that help you to have a more accurate and easy to understand financial overview of your income.",
     },
     image: {
       srcUrl: "/Dashboard-Vue.webp",
@@ -134,6 +133,7 @@ export const ProjectExampleData: ProjectProps[] = [
     listTecnologies: [
       { item: "Figma", id: 1212313 },
       { item: "Vue.js", id: 12123 },
+      { item: "Typescript", id: 12876123 },
       { item: "Vue Router", id: 132122 },
       { item: "Tailwind", id: 123213 },
       { item: "Apextchart", id: 122134 },
@@ -149,6 +149,7 @@ export const ProjectExampleData: ProjectProps[] = [
     },
     listTecnologies: [
       { item: "Next.js", id: 13112345546432 },
+      { item: "Typescript", id: 112345546432 },
       { item: "Redux Tollkit", id: 12 },
       { item: "Chakra UI", id: 123 },
       { item: "Formik", id: 1234 },
@@ -182,6 +183,7 @@ export const ProjectExampleData: ProjectProps[] = [
     },
     listTecnologies: [
       { item: "React.js", id: 1 },
+      { item: "Javascript", id: 13231254 },
       { item: "Emotion", id: 1232 },
       { item: "HTML5", id: 12132 },
     ],
@@ -215,6 +217,7 @@ export const ProjectExampleData: ProjectProps[] = [
     listTecnologies: [
       { item: "Figma", id: 131256 },
       { item: "React.Js", id: 13132256 },
+      { item: "Typescript", id: 13132251236 },
       { item: "HTML5", id: 131213256 },
       { item: "SASS", id: 342 },
     ],
@@ -246,6 +249,7 @@ export const ProjectExampleData: ProjectProps[] = [
         "a responsive app crafted with Next.js, SWR, and CSS Modules. Inspired by a design in Figma, this application showcases my expertise in creating seamless user experiences across various devices. Leveraging the power of Next.js, the app delivers fast loading times and server-side rendering. With SWR, data fetching becomes effortless, ensuring real-time updates. CSS Modules enable modular styling, maintaining code readability and scalability. Immerse yourself in the beauty of this responsive app and enjoy a smooth browsing experience..",
     },
     listTecnologies: [
+      { item: "Figma", id: 3121 },
       { item: "Next.js", id: 1 },
       { item: "Next API-Routes", id: 1312132 },
       { item: "SWR", id: 2345 },
@@ -448,7 +452,10 @@ export const companiesExperience: ExperienceCard[] = [
     date: "10/2022 - 03/2023",
     listResponsibilities: listResponsibilities.xirect,
     desciption: `The first was a web application for customers, providing them with detailed information about the company's products and services. The second was designed for distributors, allowing efficient management of orders and invoicing. Both applications were connected to each other and dynamically adjusted depending on the role of each user.
-
+    
+    Participated in the redesign of an old internal
+    application built in ASP.NET.
+    
     Finally, the third application was a betting system that offered users a unique and intuitive gaming experience. All applications were developed using technologies such as Vue, Vuex, Nuxt.js, JWT, Axios and Vuetify.`,
     listTecnologies: listTecnologies.xirect,
     id: 11321123,
