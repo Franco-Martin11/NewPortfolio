@@ -5,7 +5,7 @@ import {
   MediaLink,
   ProjectProps,
 } from "../types/types";
-import { FaLinkedin, FaGithubSquare, FaLink } from "react-icons/fa";
+import { FaLinkedin, FaGithubSquare, FaLink, FaFigma } from "react-icons/fa";
 import { MdPictureAsPdf } from "react-icons/md";
 import { SiGmail } from "react-icons/si";
 
@@ -117,17 +117,23 @@ export const ProjectExampleData: ProjectProps[] = [
     },
     route: "/ruta-ejemplo",
     hyperLink: [
-      // {
-      //   icon: FaLink,
-      //   route: "https://yomeanimo-chakra.netlify.app/",
-      //   id: 1236798,
-      //   title: "Deploy",
-      // },
+      {
+        icon: FaLink,
+        route: "https://dashboard-insightdash.netlify.app/",
+        id: 1236798,
+        title: "Deploy",
+      },
       {
         icon: FaGithubSquare,
         route: "https://github.com/Franco-Martin11/Dashboard-Vue",
         id: 21125,
         title: "Repository",
+      },
+      {
+        icon: FaFigma,
+        route: "https://www.figma.com/file/M0lpqQYhM92zZ9glTa7Tao/Dashboard-vue?type=design&mode=design&t=OpvwOcXa87vohKWZ-1",
+        id: 211255566,
+        title: "Desing",
       },
     ],
     listTecnologies: [
@@ -171,6 +177,31 @@ export const ProjectExampleData: ProjectProps[] = [
         route: "https://github.com/Franco-Martin11/Audiophile-ecommerce",
         id: 5,
         title: "Repository",
+      },
+    ],
+  },
+  {
+    descriptions: {
+      numberProject: 9,
+      title: "Furni.Shop Desing",
+      paragraph:`At Furni.Shop, you'll be captivated by an exquisite collection of elegant and minimalist-style furniture that will transform your home into a haven of sophistication and comfort. Each piece is carefully crafted by our team of designers to offer the highest quality and a distinctive touch to all our products.
+
+      What can you expect from our landing page application? It's more than just a furniture catalog; it's an immersive experience that takes you on a journey through creativity and beauty. Explore our gallery of exclusive designs, where you'll find a wide variety of furniture that caters to different styles and needs.`,
+    },
+    listTecnologies: [
+      { item: "Figma", id: 125581 },
+    ],
+    image: {
+      srcUrl: "/Thumbnail-Preview.webp",
+      alt: "Ejemplo de imagen",
+    },
+    route: "/ruta-ejemplo",
+    hyperLink: [
+      {
+        icon: FaFigma,
+        route: "https://www.figma.com/file/73OcrRcPuE71Gads2CaZbo/Furni.shop---landing-page?type=design&t=OpvwOcXa87vohKWZ-6",
+        id: 4,
+        title: "Desing",
       },
     ],
   },
@@ -244,7 +275,7 @@ export const ProjectExampleData: ProjectProps[] = [
   {
     descriptions: {
       numberProject: 6,
-      title: "Beer Shop",
+      title: "Beer Shop Aplication",
       paragraph:
         "a responsive app crafted with Next.js, SWR, and CSS Modules. Inspired by a design in Figma, this application showcases my expertise in creating seamless user experiences across various devices. Leveraging the power of Next.js, the app delivers fast loading times and server-side rendering. With SWR, data fetching becomes effortless, ensuring real-time updates. CSS Modules enable modular styling, maintaining code readability and scalability. Immerse yourself in the beauty of this responsive app and enjoy a smooth browsing experience..",
     },
@@ -264,13 +295,13 @@ export const ProjectExampleData: ProjectProps[] = [
     hyperLink: [
       {
         icon: FaLink,
-        route: "",
+        route: "https://beer-shop-next.vercel.app/",
         id: 4,
         title: "Deploy",
       },
       {
         icon: FaGithubSquare,
-        route: "",
+        route: "https://github.com/Franco-Martin11/ChallengeReact",
         id: 5,
         title: "Repository",
       },
