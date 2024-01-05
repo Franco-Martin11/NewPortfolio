@@ -459,6 +459,8 @@ export const listTecnologies: { xirect: ListItem[]; dupan: ListItem[] } = {
     { item: "Figma", id: 12345667 },
     { item: "GitLab", id: 12345669 },
     { item: "Git", id: 12345660 },
+    { item: "React", id: 123456601 },
+    { item: "Ionic", id: 1234566012 },
   ],
   dupan: [
     { item: "React.js", id: 1 },
@@ -487,7 +489,9 @@ export const companiesExperience: ExperienceCard[] = [
     Participated in the redesign of an old internal
     application built in ASP.NET.
 
-    Finally, the third application was a betting system that offered users a unique and intuitive gaming experience. All applications were developed using technologies such as Vue, Vuex, Nuxt.js, JWT, Axios and Vuetify.`,
+    Finally, the third application was a betting system that offered users a unique and intuitive gaming experience. All applications were developed using technologies such as Vue, Vuex, Nuxt.js, JWT, Axios and Vuetify.
+    
+    Ionic and React.js application development, successfully ensuring the maintenance of a cross-platform solution tailored for agile incident management within the dynamic landscape of machine operations.`,
     listTecnologies: listTecnologies.xirect,
     id: 11321123,
   },
