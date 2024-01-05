@@ -480,7 +480,7 @@ export const listTecnologies: { xirect: ListItem[]; dupan: ListItem[] } = {
 export const companiesExperience: ExperienceCard[] = [
   {
     companies: "Xirect Software Solutions",
-    date: "10/2022 - 03/2023",
+    date: "10/2022 - 12/2023",
     listResponsibilities: listResponsibilities.xirect,
     desciption: `The first was a web application for customers, providing them with detailed information about the company's products and services. The second was designed for distributors, allowing efficient management of orders and invoicing. Both applications were connected to each other and dynamically adjusted depending on the role of each user.
     
