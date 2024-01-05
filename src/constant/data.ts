@@ -62,7 +62,7 @@ export const MediaLinkArray: MediaLink[] = [
   //   icon: MdPictureAsPdf,
   // },
   {
-    route: "/CV-English.pdf",
+    route: "/CV-FrancoMartin.pdf",
     ariaLabel: "Link to download curriculum",
     label: "Curriculum in English",
     icon: MdPictureAsPdf,
@@ -144,6 +144,8 @@ export const ProjectExampleData: ProjectProps[] = [
       { item: "Tailwind", id: 123213 },
       { item: "Apextchart", id: 122134 },
       { item: "Motion", id: 121234 },
+      { item: "Node", id: 2121234 },
+      { item: "Express", id: 3121234 },
     ],
   },
   {
