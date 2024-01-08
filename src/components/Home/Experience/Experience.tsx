@@ -1,6 +1,5 @@
 import { Container } from "@chakra-ui/react";
 import { ExperienceSection } from "..";
-import { GradientDivider } from "../..";
 
 const Experience = () => {
   return (
@@ -11,7 +10,7 @@ const Experience = () => {
       gap={0}
       id="about"
     >
- <GradientDivider />
+ {/* <GradientDivider /> */}
       <Container
         variant={"section"}
         minH={"fit-content"}

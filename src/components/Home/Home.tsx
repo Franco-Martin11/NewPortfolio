@@ -7,8 +7,8 @@ const Home = () => {
     <Stack gap={12}>
       <Hero />
       <StackSection />
-      <Projects />
       <Experience />
+      <Projects />
       <FooterSection />
     </Stack>
   );
