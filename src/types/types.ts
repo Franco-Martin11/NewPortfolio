@@ -34,7 +34,7 @@ export type ImageProps = {
 
 export type HyperLinkItem = {
   icon: IconType;
-  route: string;
+  route?: string;
   id: number;
   title: string;
 };

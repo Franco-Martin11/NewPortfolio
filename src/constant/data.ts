@@ -85,7 +85,7 @@ export const ProjectExampleData: ProjectProps[] = [
     hyperLink: [
       {
         icon: FaLink,
-        route: "https://yomeanimo-chakra.netlify.app/",
+        // route: "https://yomeanimo-chakra.netlify.app/",
         id: 123436798,
         title: "Deploy",
       },
@@ -119,7 +119,7 @@ export const ProjectExampleData: ProjectProps[] = [
     hyperLink: [
       {
         icon: FaLink,
-        route: "https://dashboard-insightdash.netlify.app/",
+        // route: "https://dashboard-insightdash.netlify.app/",
         id: 1236798,
         title: "Deploy",
       },
@@ -228,7 +228,7 @@ export const ProjectExampleData: ProjectProps[] = [
     hyperLink: [
       {
         icon: FaLink,
-        route: "https://designo-website.netlify.app/",
+        // route: "https://designo-website.netlify.app/",
         id: 4,
         title: "Deploy",
       },
@@ -262,7 +262,7 @@ export const ProjectExampleData: ProjectProps[] = [
     hyperLink: [
       {
         icon: FaLink,
-        route: "https://claire-page-demo.netlify.app/",
+        // route: "https://claire-page-demo.netlify.app/",
         id: 4,
         title: "Deploy",
       },
@@ -362,7 +362,7 @@ export const ProjectExampleData: ProjectProps[] = [
     hyperLink: [
       {
         icon: FaLink,
-        route: "https://freemarket-clone.netlify.app/",
+        // route: "https://freemarket-clone.netlify.app/",
         id: 4,
         title: "Deploy",
       },
